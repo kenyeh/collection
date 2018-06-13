@@ -21,8 +21,7 @@
     [Click PC](https://kenyeh.github.io/collection/components/puzzle/pc)
     [Click mobile](https://kenyeh.github.io/collection/components/puzzle/mobile)
 - 轉輪拉霸
-    [Click PC](https://kenyeh.github.io/collection/components/NationalDay/pc)
-    [Click mobile](https://kenyeh.github.io/collection/components/NationalDay/mobile)
+    [Click](https://kenyeh.github.io/collection/components/roulette)
 - 圓形邊角表格線
     [Click](https://kenyeh.github.io/collection/components/challenge)
 - 圓形漸層背景

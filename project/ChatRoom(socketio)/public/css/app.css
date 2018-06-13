@@ -1,0 +1,551 @@
+/*‮*/@charset "UTF-8";
+/*样式重置*/
+html, body, form, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, em, i, address, a, input, textarea, label, span, strong, img, b {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 0;
+}
+
+html, body {
+  font-family: "PingFangSC","Helvetica Neue", Arial, "Hiragino Sans GB","Hiragino Sans GB W3", "Microsoft YaHei", "Wenquanyi Micro Hei", sans-serif;
+  width: 100%;
+  height: 100%;
+  color: #19232d;
+  position: relative;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus, input:focus {
+  outline: 0 none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.user-logo0 {
+  background-color: #00CC66;
+}
+
+.user-logo1 {
+  background-color: #0066CC;
+}
+
+.user-logo2 {
+  background-color: #990033;
+}
+
+.user-logo3 {
+  background-color: #660000;
+}
+
+.user-logo4 {
+  background-color: #660066;
+}
+
+.user-logo5 {
+  background-color: #336600;
+}
+
+.user-logo6 {
+  background-color: #000066;
+}
+
+.user-logo7 {
+  background-color: #333300;
+}
+
+.user-logo8 {
+  background-color: #6633CC;
+}
+
+.user-logo9 {
+  background-color: #993300;
+}
+
+.user-logo10 {
+  background-color: #FF9900;
+}
+
+.chat-room {
+  position: relative;
+  overflow-y: auto;
+  width: 100%;
+  height: 100vh;
+  background-color: #e8ede7;
+}
+
+.chat-room .top-bar {
+  position: fixed;
+  z-index: 10;
+  width: inherit;
+  padding: 15px;
+  background-color: #fff;
+  border-bottom: 1px solid #cad0ce;
+}
+
+.chat-room .top-bar .title {
+  height: 35px;
+}
+
+.chat-room .top-bar .online-list {
+  margin-top: 8px;
+  height: 35px;
+}
+
+.chat-room .top-bar .online-list .user-item {
+  float: left;
+}
+
+.chat-room .top-bar .online-list .user-item .user {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 22px;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.chat-room .top-bar .online-list .user-item .user.new:after {
+  position: absolute;
+  content: '!';
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 50%;
+  background-color: red;
+  text-align: center;
+}
+
+.chat-room .top-bar .online-list .user-item + .user-item {
+  margin-left: 5px;
+}
+
+.chat-room .top-bar .online-list .user-item.pm {
+  cursor: pointer;
+}
+
+.chat-room .top-bar .online-list .tooltip + .user-item {
+  margin-left: 5px;
+}
+
+.chat-room .message-list {
+  width: inherit;
+  height: auto;
+  min-height: 100vh;
+  padding: 15px;
+  padding-bottom: 60px;
+  padding-top: 115px;
+  border-top: 1px solid #cad0ce;
+}
+
+.chat-room .message-list .message {
+      /*
+            &.user0 {
+            .photo .user-logo0{
+            background-color: #00CC66;
+        }
+        }
+            &.user1 {
+            .photo .user-logo1{
+            background-color: #0066CC;
+        }
+        }
+            &.user2 {
+            .photo .user-logo2{
+            background-color: #990033;
+        }
+        }
+            &.user3 {
+            .photo .user-logo{
+            background-color: #660000;
+        }
+        }
+            &.user4 {
+            .photo .user-logo3{
+            background-color: #660066;
+        }
+        }
+            &.user5 {
+            .photo .user-logo4{
+            background-color: #336600;
+        }
+        }
+            &.user6 {
+            .photo .user-logo5{
+            background-color: #000066;
+        }
+        }
+            */;
+}
+
+.chat-room .message-list .message .messenger .photo {
+  float: left;
+}
+
+.chat-room .message-list .message .messenger .photo .user-logo {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 22px;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.chat-room .message-list .message .messenger .name {
+  float: left;
+  height: 35px;
+  margin-left: 5px;
+  line-height: 40px;
+  color: #006600;
+}
+
+.chat-room .message-list .message .text-body {
+  padding: 10px 35px;
+}
+
+.chat-room .message-list .message .text-body .text {
+  display: inline-block;
+  position: relative;
+  padding: 5px 10px;
+  background-color: #FFFFFF;
+}
+
+.chat-room .message-list .message .text-body .text:before {
+  position: absolute;
+  content: '';
+  top: -10px;
+  left: -8px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 8px 20px 8px;
+  border-color: transparent transparent #ffffff transparent;
+  -webkit-transform: rotate(-40deg);
+  transform: rotate(-40deg);
+}
+
+.chat-room .message-list .message.me:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.chat-room .message-list .message.me .text-body {
+  float: right;
+  padding: 10px 10px;
+}
+
+.chat-room .message-list .message.me .text-body .text {
+  background-color: #CCFFCC;
+}
+
+.chat-room .message-list .message.me .text-body .text:before {
+  position: absolute;
+  content: '';
+  top: -10px;
+  right: -8px;
+  left: initial;
+  border-color: transparent transparent #CCFFCC transparent;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+
+.chat-room .message-list .news .text-body {
+  padding: 10px 35px;
+  text-align: center;
+}
+
+.chat-room .message-list .news .text-body .text {
+  display: inline-block;
+  position: relative;
+  padding: 5px 10px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.chat-room .message-list .news.error .text-body .text {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
+.chat-room .chat-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #dddddd;
+  background-color: #fff;
+}
+
+.chat-room .chat-bar .keyin {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  padding: 15px;
+}
+
+.chat-room .chat-bar .keyin input {
+  padding-right: 80px;
+  width: 100%;
+  font-size: 22px;
+  line-height: 30px;
+  border: 0px;
+}
+
+.chat-room .chat-bar .keyin .send {
+  position: absolute;
+  right: 0px;
+  top: 0;
+  width: 80px;
+  height: 60px;
+}
+
+.chat-room .chat-bar .keyin .send button {
+  width: inherit;
+  padding: 15px;
+  font-size: 27px;
+}
+
+.chat-room .typing-bar {
+  display: none;
+  position: fixed;
+  bottom: 60px;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.chat-room .typing-bar .typeingUser {
+  font-style: italic;
+}
+
+.fullModal {
+  z-index: 51;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.fullModal .fm-content {
+  position: relative;
+  top: 50%;
+  margin-top: -50px;
+  width: 100%;
+  height: 100px;
+}
+
+.fullModal .fm-content .fm-title {
+  color: #fff;
+  text-align: center;
+  font-size: 200%;
+  font-weight: 100;
+}
+
+.fullModal .fm-content .fm-body {
+  text-align: center;
+}
+
+.fullModal .fm-content .fm-body .set-name {
+  width: 400px;
+  text-align: center;
+  font-size: 200%;
+  font-weight: 100;
+  letter-spacing: 3px;
+  color: #fff;
+  border: none;
+  border-bottom: 2px solid #fff;
+  background-color: transparent;
+}
+
+.modal .modal-title .user {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 22px;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.modal .modal-body {
+  padding: 0px;
+}
+
+.modal .modal-body .message-body {
+  overflow-y: auto;
+  height: 50vh;
+  background-color: #e8ede7;
+}
+
+.modal .modal-body .message-body .message-list {
+  width: inherit;
+  height: auto;
+  padding: 15px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.modal .modal-body .message-body .message-list .message .messenger .photo {
+  float: left;
+}
+
+.modal .modal-body .message-body .message-list .message .messenger .photo .user-logo {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 22px;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.modal .modal-body .message-body .message-list .message .messenger .name {
+  float: left;
+  height: 35px;
+  margin-left: 5px;
+  line-height: 40px;
+  color: #006600;
+}
+
+.modal .modal-body .message-body .message-list .message .text-body {
+  padding: 10px 35px;
+}
+
+.modal .modal-body .message-body .message-list .message .text-body .text {
+  display: inline-block;
+  position: relative;
+  padding: 5px 10px;
+  background-color: #FFFFFF;
+}
+
+.modal .modal-body .message-body .message-list .message .text-body .text:before {
+  position: absolute;
+  content: '';
+  top: -10px;
+  left: -8px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 8px 20px 8px;
+  border-color: transparent transparent #ffffff transparent;
+  -webkit-transform: rotate(-40deg);
+  transform: rotate(-40deg);
+}
+
+.modal .modal-body .message-body .message-list .message.me:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.modal .modal-body .message-body .message-list .message.me .text-body {
+  float: right;
+  padding: 10px 10px;
+}
+
+.modal .modal-body .message-body .message-list .message.me .text-body .text {
+  background-color: #CCFFCC;
+}
+
+.modal .modal-body .message-body .message-list .message.me .text-body .text:before {
+  position: absolute;
+  content: '';
+  top: -10px;
+  right: -8px;
+  left: initial;
+  border-color: transparent transparent #CCFFCC transparent;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+
+.modal .modal-body .message-body .message-list .news .text-body {
+  padding: 10px 35px;
+  text-align: center;
+}
+
+.modal .modal-body .message-body .message-list .news .text-body .text {
+  display: inline-block;
+  position: relative;
+  padding: 5px 10px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.modal .modal-body .message-body .message-list .news.error .text-body .text {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
+.modal .modal-body .chat-bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #dddddd;
+  background-color: #fff;
+}
+
+.modal .modal-body .chat-bar .keyin {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+}
+
+.modal .modal-body .chat-bar .keyin input {
+  padding-right: 60px;
+  width: 100%;
+  font-size: 20px;
+  line-height: 25px;
+  border: 0px;
+}
+
+.modal .modal-body .chat-bar .keyin .send {
+  position: absolute;
+  right: 0px;
+  top: 0;
+  width: 60px;
+  height: 40px;
+}
+
+.modal .modal-body .chat-bar .keyin .send button {
+  width: inherit;
+  padding: 8px;
+  font-size: 17px;
+}
