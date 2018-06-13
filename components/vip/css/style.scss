@@ -1,0 +1,1195 @@
+/*css reset*/
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address,big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul,li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,figure, figcaption,footer, header, hgroup,menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}article, aside, details, figcaption, figure,footer,header, hgroup, menu, nav, section {display: block;}body {line-height: 1;}ol, ul{list-style: none;}blockquote, q {quotes: none;}blockquote:before, blockquote:after,q:before, q:after {content: "";content: none;}
+
+@mixin line() {
+    width: 1100px;
+    height: 2px;
+    margin: 0 auto;
+
+    background: -moz-linear-gradient(left, rgba(151,149,178,0) 0%, rgba(151,149,178,0.5) 10%, rgba(151,149,178,0.83) 20%, rgba(163,162,187,1) 25%, rgba(225,224,234,1) 50%, rgba(163,162,187,1) 75%, rgba(151,149,178,0.83) 80%, rgba(151,149,178,0.5) 90%, rgba(151,149,178,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(151,149,178,0) 0%,rgba(151,149,178,0.5) 10%,rgba(151,149,178,0.83) 20%,rgba(163,162,187,1) 25%,rgba(225,224,234,1) 50%,rgba(163,162,187,1) 75%,rgba(151,149,178,0.83) 80%,rgba(151,149,178,0.5) 90%,rgba(151,149,178,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(151,149,178,0) 0%,rgba(151,149,178,0.5) 10%,rgba(151,149,178,0.83) 20%,rgba(163,162,187,1) 25%,rgba(225,224,234,1) 50%,rgba(163,162,187,1) 75%,rgba(151,149,178,0.83) 80%,rgba(151,149,178,0.5) 90%,rgba(151,149,178,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009795b2', endColorstr='#009795b2',GradientType=1 ); /* IE6-9 */
+}
+
+@mixin clearfloat() {
+    &:after {
+        content: " ";
+        display: block;
+        height: 0;
+        clear: both;
+    }
+}
+
+
+body {
+    position: relative;
+    width: 100%;
+    min-width: 1200px;
+    font-family: "Lantinghei SC", "PingFangSC", "Helvetica Neue", Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", "Wenquanyi Micro Hei", sans-serif;
+}
+
+.nav {
+    z-index: 50;
+    position: fixed;
+    top: 20%;
+    right: 75px;
+    width: 65px;
+    height: auto;
+    .nav-list {
+        width: inherit;
+        height: inherit;
+        .nav-item {
+            display: block;
+            width: 65px;
+            height: 72px;
+            text-decoration: none;
+
+            background:transparent;
+            
+            .icon {
+                width: 40px;
+                height: 40px;
+                margin: 0 auto;
+
+                border: 1px solid #fff;
+                -moz-transform:rotate(45deg); 
+                -webkit-transform:rotate(45deg); 
+                -o-transform:rotate(45deg); 
+                transform:rotate(45deg); 
+                
+                .icon-img {
+                    width: inherit;
+                    height: inherit;
+                    
+
+                    -moz-transform:rotate(-45deg); 
+                    -webkit-transform:rotate(-45deg); 
+                    -o-transform:rotate(-45deg); 
+                    transform:rotate(-45deg); 
+                }
+
+               
+            }
+            .name {
+                margin-top: 15px;
+                color: #fff;
+                text-align: center;
+                
+            }
+            
+            + .nav-item {
+                margin-top: 20px;
+            }
+
+            &.active {
+                
+                .icon {
+                    
+                    border:0px;
+                    background: rgb(249,212,35); /* Old browsers */
+                    background: -moz-linear-gradient(-45deg, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 49.99%, rgba(255,78,80,1) 50%, rgba(249,212,35,1) 100%); /* FF3.6-15 */
+                    background: -webkit-linear-gradient(-45deg, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 49.99%, rgba(255,78,80,1) 50%, rgba(249,212,35,1) 100%, rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+                    background: linear-gradient(-45deg, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 49.99%, rgba(255,78,80,1) 50%, rgba(249,212,35,1) 100%, rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    background-size: 100% 300%;
+                    background-position: 50% 0%;
+                    animation: Gradient 0.5s ease;
+                    -webkit-animation: Gradient 0.5s ease;
+
+                }
+            }
+
+            @keyframes Gradient {
+                0% {
+                    background-position: 50% 100%
+                }
+                100% {
+                    background-position: 50% 0%
+                }
+            }
+            @-webkit-keyframes Gradient {
+                0% {
+                    background-position: 50% 100%
+                }
+                100% {
+                    background-position: 50% 0%
+                }
+            }
+
+            &.item1 {
+                .icon-img {
+                    background: url(../images/icon-01.png)no-repeat center center;
+                }
+            }
+            &.item2 {
+                .icon-img {
+                    background: url(../images/icon-02.png)no-repeat center center;
+                }
+            }
+            &.item3 {
+                .icon-img {
+                    background: url(../images/icon-03.png)no-repeat center center;
+                }
+            }
+            &.item4 {
+                .icon-img {
+                    background: url(../images/icon-04.png)no-repeat center center;
+                }
+            }
+            &.item5 {
+                .icon-img {
+                    background: url(../images/icon-05.png)no-repeat center center;
+                }
+            }
+        }
+    }
+}
+
+.page-banner {
+    width: 100%;
+    height: 848px;
+
+    background: url(../images/bg-01.jpg)no-repeat center top;
+    .page-body {
+        position: relative;
+        width: 1200px;
+        height: inherit;
+        margin: 0 auto;
+
+        .logo {
+            display: block;
+            position: absolute;
+            top: 25px;
+            width: 167px;
+            height: 55px;
+
+            background: url(../images/logo.png)no-repeat center top;
+        }
+    }
+}
+
+.page1 {
+    width: 100%;
+    height: 815px;
+
+    background: url(../images/bg-02.png)no-repeat center top;
+    .page-body {
+        position: relative;
+        width: 1200px;
+        height: inherit;
+        margin: 0 auto;
+
+        .page-title {
+            position: relative;
+            width: 100%;
+            height: 150px;
+            padding-top: 60px;
+            .title {
+                width: 511px;
+                height: 123px;
+                background: url(../images/title01.png)no-repeat center top;
+            }
+
+            .line {
+                @include line();
+            }
+        }
+        .silder {
+            width: 100%;
+            height: 560px;
+            margin: 0 auto;
+            .swiper-container {
+                .swiper-wrapper {
+                    .swiper-slide {
+                        width: 100%;
+                        height: 510px;
+
+                        .lv-body {
+                            position: relative;
+                            width: 1090px;
+                            height: 430px;
+                            margin: 0 auto;
+
+                            .blinking {
+                                position: absolute;
+                                width: 77px;
+                                height: 65px;
+
+                                
+                                background: url(../images/light.png)no-repeat center top;
+                            }
+
+                            .lv-img {
+                                z-index: 10;
+                                position: absolute;
+                                width: 500px;
+                                height: 410px;
+                                
+                                background-repeat: no-repeat;
+                                background-position: top center;
+                            }
+
+                            .lv-info {
+                                position: absolute;
+                                top: 40px;
+                                left: 550px;
+                                width: 420px;
+                                height: 320px;
+                                
+
+                                .title {
+                                    width: 153px;
+                                    height: 80px;
+                                    margin-top: 30px;
+
+                                    
+                                    background-repeat: no-repeat;
+                                    background-position: top center;
+                                }
+
+                                .subtitle {
+                                    margin-top: 15px;
+                                    font-size: 36px;
+                                    color: #fff;
+                                }
+
+                                .info-line {
+                                    width: 100%;
+                                    height: 1px;
+                                    margin-top: 25px;
+                                    border-bottom: 1px dashed #3e3ba9;
+                                }
+
+                                .lv-state {
+                                    position: relative;
+                                    width: 100%;
+                                    height: 30px;
+                                    margin-top: 25px;
+                                    line-height: 30px;
+                                    font-size: 14px;
+                                    color: #ee5416;
+
+                                    @include clearfloat();
+                                    
+
+                                    > div {
+                                        float: left;
+                                    }
+
+                                    .slash {
+                                        font-size: 30px;
+                                        margin-right: 10px;
+                                    }
+
+                                    .border {
+                                        position: relative;
+                                        width: auto;
+                                        height: 27px;
+                                        line-height: 27px;
+                                        margin: 0 25px;
+                                        padding: 0 5px;
+                                        vertical-align: middle;
+                                        border-bottom: 1px solid #ee5416;
+                                        border-top: 1px solid #ee5416;
+
+                                        &::before {
+                                            display: block;
+                                            position: absolute;
+                                            content: '';
+                                            width: 17px;
+                                            height: 29px;
+                                            left: -17px;
+                                            top: -1px;
+                                            background: url(../images/text-border-icon.png)no-repeat center top;
+                                        }
+                                        &::after {
+                                            display: block;
+                                            position: absolute;
+                                            content: '';
+                                            width: 17px;
+                                            height: 29px;
+                                            right: -17px;
+                                            top: -1px;
+                                            background: url(../images/text-border-icon.png)no-repeat center top;
+
+                                            //flip
+                                            -moz-transform: scaleX(-1);
+                                            -o-transform: scaleX(-1);
+                                            -webkit-transform: scaleX(-1);
+                                            -ms-transform: scaleX(-1);
+                                            transform: scaleX(-1);
+                                            -ms-filter: "FlipH";
+                                            filter: FlipH;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &.lv1 {
+                            .title {
+                                background-image: url(../images/text-lv1.png);
+
+                                .blinking:nth-child(1) {
+                                    top: 3px;
+                                    left: 0px;
+                                    transform: scale(1.2);
+                                    animation: blinker 0.9s linear infinite;
+                                }
+                                .blinking:nth-child(2) {
+                                    top: 67px;
+                                    left: 100px;
+                                    transform: scale(1);
+                                    animation: blinker 0.7s linear infinite;
+                                }
+                                .blinking:nth-child(3) {
+                                    top: 65px;
+                                    left: 23px;
+                                    transform: scale(0.5);
+                                    animation: blinker 1s linear infinite;
+                                }
+                            }
+                            .lv-img {
+                                left: 105px;
+                                background-image: url(../images/crown-lv1.png);
+
+                                .blinking:nth-child(1) {
+                                    top: 106px;
+                                    left: 175px;
+                                
+                                    transform: scale(1.5);
+                                    animation: blinker 1s linear infinite;
+                                }
+                                .blinking:nth-child(2) {
+                                    top: 77px;
+                                    left: 152px;
+                                
+                                    transform: scale(1);
+                                    animation: blinker 0.7s linear infinite;
+                                }
+                            }
+                        }
+
+                        &.lv2 {
+                            .title {
+                                background-image: url(../images/text-lv2.png);
+                                .blinking:nth-child(1) {
+                                    top: 4px;
+                                    left: -5px;                                
+                                    transform: scale(1.2);
+                                    animation: blinker 0.9s linear infinite;
+                                }
+                                .blinking:nth-child(2) {
+                                    top: 67px;
+                                    left: 100px;
+                                    transform: scale(1);
+                                    animation: blinker 0.7s linear infinite;
+                                }
+                                .blinking:nth-child(3) {
+                                    top: 65px;
+                                    left: 23px;
+                                    transform: scale(0.5);
+                                    animation: blinker 1s linear infinite;
+                                }
+                            }
+                            .lv-img {
+                                top: 40px;
+                                left: 110px;
+
+                                background-image: url(../images/crown-lv2.png);
+
+                                .blinking:nth-child(1) {
+                                    top: 77px;
+                                    left: 185px;
+                                
+                                    transform: scale(1);
+                                    animation: blinker 1s linear infinite;
+                                }
+                                .blinking:nth-child(2) {
+                                    top: 83px;
+                                    left: 220px;
+                                
+                                    transform: scale(2);
+                                    animation: blinker 0.7s linear infinite;
+                                }
+                            }
+                        }
+                        &.lv3 {
+                            .title {
+                                background-image: url(../images/text-lv3.png);
+                                .blinking:nth-child(1) {
+                                    top: 4px;
+                                    left: -5px;                                
+                                    transform: scale(1.2);
+                                    animation: blinker 0.9s linear infinite;
+                                }
+                                .blinking:nth-child(2) {
+                                    top: 67px;
+                                    left: 100px;
+                                    transform: scale(1);
+                                    animation: blinker 0.7s linear infinite;
+                                }
+                                .blinking:nth-child(3) {
+                                    top: 65px;
+                                    left: 23px;
+                                    transform: scale(0.5);
+                                    animation: blinker 1s linear infinite;
+                                }
+                            }
+                            .lv-img {
+                                top: 40px;
+                                left: 110px;
+
+                                background-image: url(../images/crown-lv3.png);
+
+                                .blinking:nth-child(1) {
+                                    top: 77px;
+                                    left: 185px;
+                                
+                                    transform: scale(1);
+                                    animation: blinker 1s linear infinite;
+                                }
+                                .blinking:nth-child(2) {
+                                    top: 106px;
+                                    left: 208px;
+                                
+                                    transform: scale(2);
+                                    animation: blinker 1.2s linear infinite;
+                                }
+                            }
+                        }
+                        &.lv4 {
+                            .title {
+                                background-image: url(../images/text-lv4.png);
+                                .blinking:nth-child(1) {
+                                    top: 4px;
+                                    left: 13px;                           
+                                    transform: scale(1.2);
+                                    animation: blinker 0.9s linear infinite;
+                                }
+                                .blinking:nth-child(2) {
+                                    top: 67px;
+                                    left: 105px;
+                                    transform: scale(1);
+                                    animation: blinker 0.7s linear infinite;
+                                }
+                                .blinking:nth-child(3) {
+                                    top: 65px;
+                                    left: 23px;
+                                    transform: scale(0.5);
+                                    animation: blinker 1s linear infinite;
+                                }
+                            }
+                            .lv-img {
+                                top: 55px;
+                                left: 90px;
+
+                                background-image: url(../images/crown-lv4.png);
+                                .blinking:nth-child(1) {
+                                    top: 92px;
+                                    left: 185px;
+                                
+                                    transform: scale(1.5);
+                                    animation: blinker 1s linear infinite;
+                                }
+                                .blinking:nth-child(2) {
+                                    top: 130px;
+                                    left: 208px;
+                                
+                                    transform: scale(2);
+                                    animation: blinker 1.2s linear infinite;
+                                }
+                            }
+                        }
+                        &.lv5 {
+                            .title {
+                                background-image: url(../images/text-lv5.png);
+                                .blinking:nth-child(1) {
+                                    top: 4px;
+                                    left: -18px;
+                                    transform: scale(1.2);
+                                    animation: blinker 0.9s linear infinite;
+                                }
+                                .blinking:nth-child(2) {
+                                    top: 67px;
+                                    left: 105px;
+                                    transform: scale(1);
+                                    animation: blinker 0.7s linear infinite;
+                                }
+                                .blinking:nth-child(3) {
+                                    top: 65px;
+                                    left: 23px;
+                                    transform: scale(0.5);
+                                    animation: blinker 1s linear infinite;
+                                }
+                            }
+                            .lv-img {
+                                top: 40px;
+                                left: 90px;
+
+                                background-image: url(../images/crown-lv5.png);
+                                .blinking:nth-child(1) {
+                                    top: 65px;
+                                    left: 200px;
+                                
+                                    transform: scale(0.7);
+                                    animation: blinker 1s linear infinite;
+                                }
+                                .blinking:nth-child(2) {
+                                    top: 75px;
+                                    left: 100px;
+                                
+                                    transform: scale(1.5);
+                                    animation: blinker 1.2s linear infinite;
+                                }
+                            }
+                        }
+                        &.lv6 {
+                            .title {
+                                background-image: url(../images/text-lv6.png);
+                                .blinking:nth-child(1) {
+                                    top: 4px;
+                                    left: -11px;
+                                    transform: scale(1.2);
+                                    animation: blinker 0.9s linear infinite;
+                                }
+                                .blinking:nth-child(2) {
+                                    top: 62px;
+                                    left: 105px;
+                                    transform: scale(1);
+                                    animation: blinker 0.7s linear infinite;
+                                }
+                                .blinking:nth-child(3) {
+                                    top: 65px;
+                                    left: 23px;
+                                    transform: scale(0.5);
+                                    animation: blinker 1s linear infinite;
+                                }
+                            }
+                            .lv-img {
+                                top: 40px;
+                                left: 120px;
+
+                                background-image: url(../images/crown-lv6.png);
+                                .blinking:nth-child(1) {
+                                    top: 68px;
+                                    left: 181px;
+                                
+                                    transform: scale(0.7);
+                                    animation: blinker 1s linear infinite;
+                                }
+                                .blinking:nth-child(2) {
+                                    top: 105px;
+                                    left: 184px;
+                                
+                                    transform: scale(1.5);
+                                    animation: blinker 1s linear infinite;
+                                }
+                            }
+                        }
+                        &.lv7 {
+                            .title {
+                                background-image: url(../images/text-lv7.png);
+                                .blinking:nth-child(1) {
+                                    top: 8px;
+                                    left: -11px;
+                                    transform: scale(1.2);
+                                    animation: blinker 0.9s linear infinite;
+                                }
+                                .blinking:nth-child(2) {
+                                    top: 62px;
+                                    left: 100px;
+                                    transform: scale(1);
+                                    animation: blinker 0.7s linear infinite;
+                                }
+                                .blinking:nth-child(3) {
+                                    top: 65px;
+                                    left: 23px;
+                                    transform: scale(0.5);
+                                    animation: blinker 1s linear infinite;
+                                }
+                            }
+                            .lv-img {
+                                top: 26px;
+                                left: 90px;
+
+                                background-image: url(../images/crown-lv7.png);
+                                .blinking:nth-child(1) {
+                                    top: 57px;
+                                    left: 199px;
+                                
+                                    transform: scale(0.7);
+                                    animation: blinker 1s linear infinite;
+                                }
+                                .blinking:nth-child(2) {
+                                    top: 84px;
+                                    left: 268px;
+                                
+                                    transform: scale(1.5);
+                                    animation: blinker 1.2s linear infinite;
+                                }
+                            }
+                        }
+                        &.lv8 {
+                            .title {
+                                background-image: url(../images/text-lv8.png);
+                                .blinking:nth-child(1) {
+                                    top: 8px;
+                                    left: -11px;
+                                    transform: scale(1.2);
+                                    animation: blinker 0.9s linear infinite;
+                                }
+                                .blinking:nth-child(2) {
+                                    top: 62px;
+                                    left: 94px;
+                                    transform: scale(1);
+                                    animation: blinker 0.7s linear infinite;
+                                }
+                                .blinking:nth-child(3) {
+                                    top: 65px;
+                                    left: 23px;
+                                    transform: scale(0.5);
+                                    animation: blinker 1s linear infinite;
+                                }
+                            }
+                            .lv-img {
+                                top: -30px;                                
+                                left: 110px;
+
+                                background-image: url(../images/crown-lv8.png);
+                                .blinking:nth-child(1) {
+                                    top: 77px;
+                                    left: 178px;
+                                
+                                    transform: scale(0.7);
+                                    animation: blinker 1s linear infinite;
+                                }
+                                .blinking:nth-child(2) {
+                                    top: 116px;
+                                    left: 68px;
+                                
+                                    transform: scale(1.5);
+                                    animation: blinker 1.2s linear infinite;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .swiper-button-next {
+                    width: 47px;
+                    height: 93px;
+                    background-image: url(../images/btn-arrow.png);
+                    background-repeat: no-repeat;
+                    background-position: top center;
+                    background-size: 100% auto;
+                }
+                .swiper-button-prev {
+                    width: 47px;
+                    height: 93px;
+                    background-image: url(../images/btn-arrow.png);
+                    background-repeat: no-repeat;
+                    background-position: top center;
+                    background-size: 100% auto;
+
+                    //flip
+                    -moz-transform: scaleX(-1);
+                    -o-transform: scaleX(-1);
+                    -webkit-transform: scaleX(-1);
+                    -ms-transform: scaleX(-1);
+                    transform: scaleX(-1);
+                    -ms-filter: "FlipH";
+                    filter: FlipH;
+                }
+
+                .swiper-pagination {
+
+                    .swiper-pagination-bullet {
+                        opacity: .7;
+                        width: 20px;
+                        height: 60px;
+                        color: #fff;
+                        margin-left: 13px;
+                        margin-right: 13px;
+                        border-radius:0%;
+                        background: transparent;
+                        text-align: center;
+                        .p-icon {
+                            display: inline-block;
+                            width: 14px;
+                            height: 14px;
+                            line-height: 14px;
+                            margin-bottom: 10px;
+                            background-color: #fff;
+                            -moz-transform:rotate(45deg); 
+                            -webkit-transform:rotate(45deg); 
+                            -o-transform:rotate(45deg); 
+                            transform:rotate(45deg); 
+
+                            &::after {
+                                content: '';
+                                display: inline-block;
+                                width: 8px;
+                                height: 8px;
+                                border: 1px solid #15115b;
+                            }
+                        }
+                        &.swiper-pagination-bullet-active {
+                            color: #ee5416;
+                            .p-icon {
+                                background-color: #ee5416;
+                                
+                                &::after {
+                                    content: '';
+                                    display: inline-block;
+                                    width: 8px;
+                                    height: 8px;
+                                    border: 1px solid #ee5416;
+                                }
+                                
+                            }
+                        }
+                    }
+                    
+
+                    
+                }
+            }
+            
+        }
+        
+    }
+}
+
+@keyframes blinker {  
+    50% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+}
+
+.page2 {
+    width: 100%;
+    height: 915px;
+
+    background: url(../images/bg-03.png)no-repeat center top;
+    .page-body {
+        position: relative;
+        width: 1200px;
+        height: inherit;
+        margin: 0 auto;
+
+        .page-title {
+            position: relative;
+            width: 100%;
+            height: 150px;
+            padding-top: 80px;
+            .title {
+                width: 559px;
+                height: 117px;
+                background: url(../images/title02.png)no-repeat center top;
+            }
+
+            .line {
+                @include line();
+            }
+        }
+
+        .info-body {
+            width: 100%;
+            height: 360px;
+            margin-top: 110px;
+            @include clearfloat();
+            .info-block {
+                position: relative;
+                float: left;
+                width: 216px;
+                height: 360px;
+                
+                
+
+                + .info-block {
+                    margin-left: 30px;
+                }
+                .info-btn {
+                    width: 216px;
+                    height: 360px;
+                    background-color: rgba(0, 0, 0, 0.3);
+                }
+    
+                .info-showing {
+                    display: none;
+                    z-index: 5;
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    width: 708px;
+                    height: 360px;
+                    text-align: center;
+                    
+                    .showing-content {
+                        position: relative;
+                        width: 452px;
+                        height: 342px;
+                        
+                        padding-top: 15px;                    
+                        .table {
+                            width: 448px;
+                            margin: 0 auto;
+                            border-collapse:collapse;
+                            color: #333333;
+                            font-size: 16px;
+                            tr {
+                                td {
+                                    padding: 10px 10px;
+                                    border: 1px solid #cccccc;
+                                }
+                            }                     
+                        }
+                        p {
+                            font-size: 18px;
+                            line-height: 25px;
+                        }
+
+                        a {
+                            font-size: 18px;
+                            color: #ee5416;
+                            text-decoration: none;
+                        }
+
+                        ul {
+                            margin-top: 10px;
+                            padding-left: 25px;
+                            text-align: left;
+                            list-style-image: url(../images/list-icon.png);
+                            li {
+                                font-size: 16px;
+                                line-height: 30px;
+                                .small {
+                                    font-size: 12px;
+                                    color: #ee5416;
+                                }
+                            }
+                        }
+
+                        .text {
+                            width: 400px;
+                            height: auto;
+                            margin-top: 25px;
+                            margin-left: 30px;
+                            text-align: left;
+                            font-size: 18px;
+                            color: #333333;
+
+                            .big {
+                                font-size: 24px;
+                                font-weight: bold;
+                            }
+                        }
+                        .sample {
+                            position: relative;
+                            cursor: pointer;
+                            width: 100%;
+                            height: 100%;
+                            
+                            background-image: url(../images/sample.png);
+                            
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: 100% 100%;
+                            transition:all 0.5s ;
+                            -webkit-transition:all 0.5s ;
+                            transform-origin: 50% 50%;
+                            -webkit-transform-origin: 50% 50%;
+
+                            &:hover {
+                                background-size: 120% 120%;
+                            }
+
+                            .sample-link {
+                                display: block;
+                                position: absolute;
+                                width: 462px;
+                                height: 362px;
+                                top: -5px;
+                                left: -5px;
+
+                                background-color: rgba(0, 0, 0, 0.3);
+
+                                &::before {
+                                    position: absolute;
+                                    top: 167px;
+                                    right: -14px;
+                                    content: '';
+                                    width: 0;
+                                    height: 0;
+                                    border-style: solid;
+                                    border-width: 14px 0 14px 14px;
+                                    border-color: transparent transparent transparent rgba(0, 0, 0, 0.3);
+                                }
+
+                                .link {
+                                    position: absolute;
+                                    left: 210px;
+                                    top: 124px;
+                                    width: 67px;
+                                    height: 67px;
+                                    background: url(../images/link-icon.png)no-repeat center top;
+                                }
+                                .link-name {
+                                    position: absolute;
+                                    left: 188px;
+                                    top: 200px;
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    color: #d65207;
+                                }
+                            }
+                        }
+                        .pop-black {
+                            z-index: 10;
+                            display: none;
+                            position: absolute;
+                            top: 0px;
+                            left: -75px;
+                            width: 1023px;
+                            height: 335px;
+                            padding-top: 25px;
+
+                            .pop-content {
+                                width: 760px;
+                                height: 266px;
+                                padding: 10px 15px;
+                                background-color: #fff;
+                            }
+                            .close {
+                                position: absolute;
+                                cursor: pointer;
+                                top: -3px;
+                                left: 765px;
+                                width: 24px;
+                                height: 24px;
+                                background: url(../images/x.png)no-repeat center top;
+                            }
+                        }
+                    }
+
+                    &.right {
+                        background: url(../images/hover-block-right.png)no-repeat center top;
+
+                        .showing-content {
+                            margin-left: 252px;
+                        }
+                    }
+
+                    &.left {
+                        margin-left: -492px;
+                        background: url(../images/hover-block-left.png)no-repeat center top;
+
+                        .showing-content {
+                            margin-right: 252px;
+                            text-align: left;
+                            
+                            .text {
+                                margin-top: 10px;
+                                p {
+                                    font-size: 16px;
+                                }
+                            }
+
+                            .table {
+                                margin-top: 10px;
+                                text-align: center;
+                                width: 400px;
+                            }
+                        }
+                    }
+                }
+
+                &.info-1 {
+                    background: url(../images/info-block-bg1.png)no-repeat center top;
+                }
+
+                &.info-2 {
+                    background: url(../images/info-block-bg2.png)no-repeat center top;
+                }
+
+                &.info-3 {
+                    background: url(../images/info-block-bg3.png)no-repeat center top;
+                }
+
+                &.info-4 {
+                    background: url(../images/info-block-bg4.png)no-repeat center top;
+                }
+
+                &.info-5 {
+                    background: url(../images/info-block-bg5.png)no-repeat center top;
+
+                    .showing-content {
+                        padding: 4px;
+                        height: 352px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+.page3 {
+    width: 100%;
+    height: 1243px;
+
+    background: url(../images/bg-04.png)no-repeat center top;
+    .page-body {
+        position: relative;
+        width: 1200px;
+        height: inherit;
+        margin: 0 auto;
+
+        .page-title {
+            position: relative;
+            width: 100%;
+            height: 150px;
+            padding-top: 50px;
+            .title {
+                width: 769px;
+                height: 121px;
+                background: url(../images/title03.png)no-repeat center top;
+            }
+
+            .line {
+                @include line();
+            }
+        }
+
+        .rules {
+            .rule {
+                margin-top: 10px;
+                margin-left: 20px;
+
+                .rule-title {
+                    font-size: 30px;
+                    color: #9292ff;
+                    .icon-title {
+                        display: inline-block;
+                        width: 37px;
+                        height: 20px;
+                        margin-right: 13px;
+
+                        background: url(../images/icon-list.png)no-repeat center top;
+                        background-size: 100% auto;
+                    }
+                }
+
+                .rule-body {
+                    margin-top: 25px;
+                    padding-left: 50px;
+                    font-size: 16px;
+                    line-height: 30px;
+                    color: #fff;
+                    .rule-table {
+                        text-align: center;
+                        
+                        
+                        border:1px solid #5d5aea;
+                        border-collapse:collapse;
+                        background-color: #282084;
+                        tr.table-title {
+                            
+                            background-color: #221b76;
+                            
+                            td {
+                                
+                                border-bottom: 0px;
+                            }
+                        }
+
+                        tr:nth-child(2) > td {
+                            border-top: 0px;
+                        }
+                        td {
+                            line-height: 60px;
+                            vertical-align: middle;
+                            border:1px solid #3a34a4;
+
+                            &:nth-child(1) {
+                                width: 125px;
+                            }
+                            &:nth-child(2) {
+                                width: 103px;
+                            }
+                            &:nth-child(3) {
+                                width: 123px;
+                            }
+                            &:nth-child(4) {
+                                width: 120px;
+                            }
+                            &:nth-child(5) {
+                                width: 152px;
+                            }
+                        }
+                    }
+
+                    .text-red {
+                        color: #ee5416;
+                    }
+
+                    .two-block {
+                        width: 1070px;
+                        height: 190px;
+                        .block {
+                            float: left;
+                            width: 522px;
+                            height: 182px;
+
+                            border: 1px solid #5d5aea;
+                            background-color: #282084;
+
+                            .top {
+                                width: 100%;
+                                height: 40px;
+                                text-align: center;
+                                font-size: 24px;
+                                line-height: 40px;
+                                background-color: #221b76;
+                            }
+
+                            .content { 
+                                padding: 10px 15px; 
+                            }
+                        }
+                        
+                        .block + .block {
+                            margin-left: 20px;
+                        }
+
+
+                        @include clearfloat();
+                    }
+                }
+
+                &.rule-2 {
+                    margin-top: 35px;
+                }
+            }
+        }
+
+        .footer-line {
+            width: 1199px;
+            height: 119px;
+
+            background: url(../images/line.png)no-repeat center top;
+        }
+
+        .footer-rule {
+            width: 100%;
+            margin-top: -30px;
+            font-size: 14px;
+            line-height: 20px;
+            color: #9292ff;
+            text-align: center;
+        }
+        
+    }
+}
