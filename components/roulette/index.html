@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Roulette</title>
+    <style>
+        .roulette {
+            position: relative;
+            width: 800px;
+            height: 800px;
+        }
+
+        .point {
+            z-index: 50;
+            position: absolute;
+            left: 277px;
+            width: 58px;
+            height: 77px;
+
+            background: url(point.png) no-repeat center top;
+            background-size: 100% auto;
+        }
+
+
+        .wheel-center {
+            z-index: 50;
+            position: absolute;
+            top: 193px;
+            left: 208px;
+            width: 193px;
+            height: 184px;
+
+            background: url(wheel-center.png) no-repeat center top;
+            background-size: 100% auto;
+        }
+        .light {
+            display: none;
+            z-index: 25;
+            position: absolute;
+            top: 30px;
+            left: 214px;
+            width: 177px;
+            height: 213px;
+
+            background: url(a3-light.png) no-repeat center top;
+            background-size: 100% auto;
+
+            animation: blink 1s linear infinite;
+        }
+
+        .wheel {
+            z-index: 10;
+            position: absolute;
+            top: 15px;
+            left: 33px;
+            width: 538px;
+            height: 538px;
+
+            background: url(a3-wheel-2.png) no-repeat center top;
+            background-size: 100% auto;
+
+            
+        }
+        .wheel.run{
+            animation: rotate 0.66s linear infinite;
+        }
+        @keyframes rotate {
+            100% {
+            transform: rotate(360deg);
+            }
+        }
+        @keyframes blink {
+            0% {opacity: 0.3;}
+            50% {opacity: 1;}
+            100% {opacity: 0.3;}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="roulette">
+
+        <div class="wheel run"></div>
+        <div class="wheel-center"></div>
+        <div class="point"></div>
+        <div class="light"></div>
+    </div>
+</body>
+<script src="jquery-1.9.1.min.js"></script>
+<script src="jquery.easing.1.3.js"></script>
+<script>
+    
+    var gift = [
+        '金牌',
+        '月餅',
+        '充電寶',
+        '30元',
+        '20元',
+        '18元',
+        '10元',
+        '8元',
+        '5元',
+        '感謝',
+        '188元',
+        '機器人'
+    ]
+    
+    /*
+    var gift = [
+        '感謝',
+        '感謝',
+        '20元',
+        '感謝',
+        '10元',
+        '感謝',
+        '感謝',
+        '感謝',
+        '18元',
+        '感謝',
+        '5元',
+        '感謝'
+    ]
+    */
+
+    var get = parseInt((Math.random() * gift.length));
+
+    var the_deg = (((360 / gift.length) * (get)));
+    console.log(get);
+    console.log(gift[get]);
+    console.log(the_deg);
+
+
+
+    $.fn.animateRotate = function(angle, duration, easing, complete) {
+        var args = $.speed(duration, easing, complete);
+        var step = args.step;
+        return this.each(function(i, e) {
+            args.step = function(now) {
+                $.style(e, 'transform', 'rotate(' + now + 'deg)');
+                if (step) return step.apply(this, arguments);
+            };
+    
+            $({deg: 0}).animate({deg: angle}, args);
+        });
+    };
+    
+    $(".wheel").click(function(){
+        $(this).removeClass('run')
+
+        $(this).animateRotate(1080, 2000, "linear", function(){
+            console.log('slowdown'); //this is supposed to be the DOM node, but it isn't
+            $(".wheel").css({
+                'transform' : 'rotate(0deg)'			
+            });
+            console.log((360 + the_deg));
+            $(".wheel").animateRotate((360 + the_deg), 1500, "easeOutSine", function(){
+                console.log('end'); //this is supposed to be the DOM node, but it isn't
+                console.log('you got the ', gift[get])
+                $('.light').fadeIn();
+                setTimeout(function(){
+                    $('.light').fadeOut();
+                },2500)
+            });
+        });
+    });
+    
+
+
+</script>
+
+</html>
