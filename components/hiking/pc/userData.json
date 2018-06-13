@@ -1,0 +1,9 @@
+{
+    "isSuccess": 1,
+    "data": {
+        "status": 1,
+        "activityStatus": 3,
+        "signStatus": -20,
+        "win": ""
+    }
+}

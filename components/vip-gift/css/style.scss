@@ -1,0 +1,145 @@
+/*css reset*/
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address,big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul,li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,figure, figcaption,footer, header, hgroup,menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}article, aside, details, figcaption, figure,footer,header, hgroup, menu, nav, section {display: block;}body {line-height: 1;}ol, ul{list-style: none;}blockquote, q {quotes: none;}blockquote:before, blockquote:after,q:before, q:after {content: "";content: none;}
+
+@mixin clearfloat() {
+    &:after {
+        content: " ";
+        display: block;
+        height: 0;
+        clear: both;
+    }
+}
+
+body {
+    font-family: "Lantinghei SC", "PingFangSC", "Helvetica Neue", Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", "Wenquanyi Micro Hei", sans-serif;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    height: 3274px;
+    min-width: 1200px;
+    
+    background: url(../images/bg.jpg)no-repeat center top;
+    .main-body {
+        height: inherit;
+        width: 1200px;
+        margin: 0 auto;
+
+        .gift-list {
+            width: 1000px;
+            height: auto;
+            
+            padding: 0 100px;
+            padding-top: 1280px;
+    
+            .list-row {
+                @include clearfloat();
+                margin-top: 25px;
+    
+                .gift {
+                    float: left;
+                    width: 300px;
+                    height: 418px;
+                    padding-top: 20px;
+                    
+    
+                    background: url(../images/border.png)no-repeat top center;
+                    
+    
+                    .gift-body {
+    
+                        width: 300px;
+                        height: 418px;
+                        text-align: center;
+                        box-shadow: 0px 0px 50px rgba(255, 229, 179, 0.8);
+                        transition: box-shadow 0.2s ease-in-out;
+                        -webkit-transition: box-shadow 0.2s ease-in-out;
+                        img {
+                            margin-top: 45px;
+                        }
+    
+                        &:hover {
+                            box-shadow: 0px 0px 70px rgba(255, 229, 179, 1);
+                        }
+                    }
+                    
+    
+                    + .gift {
+                        margin-left: 50px;
+                    }
+                }
+                
+                +.list-row {
+                    margin-top: 50px;
+                }
+            }
+        }
+    
+        .entrance {
+            width: 320px;
+            height: 90px;
+            margin: 0 auto;
+            margin-top: 90px;
+    
+            .btn-link {
+                display: inline-block;
+                width: 320px;
+                height: 90px;
+    
+                text-align: center;
+                line-height: 90px;
+    
+                background: url(../images/btn.png)no-repeat top center;
+                border-radius: 45px;
+                box-shadow: 0px 0px 15px rgba(255, 234, 191, 0.5);
+                transition: box-shadow 0.2s ease-in-out;
+                -webkit-transition: box-shadow 0.2s ease-in-out;
+    
+                .link-text {
+                    display: inline-block;
+                    width: 158px;
+                    height: 43px;
+                    vertical-align: middle;
+                    background: url(../images/btn-text.png)no-repeat top center;
+                }
+    
+                &:hover {
+                    box-shadow: 0px 0px 30px rgba(255, 234, 191, 0.8);
+                    .link-text {
+                        background: url(../images/btn-text-hover.png)no-repeat top center;
+                    }
+                }
+            }
+        }
+    
+        .rule {
+            width: 778px;
+            height: 90px;
+            margin: 0 auto;
+            margin-top: 85px;
+    
+            background: url(../images/bg-rule.png)no-repeat center center;
+    
+            .rule-text {
+                width: 435px;
+                height: 90px;
+                margin: 0 auto;
+                text-align: center;
+                font-size: 30px;
+                line-height: 40px;
+                color: #ffe3b1;
+            }
+        }
+
+        .copyright {
+            margin-top: 135px;
+            color: #ffe3b1;
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+
+    
+}
+

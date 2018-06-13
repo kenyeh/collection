@@ -1,0 +1,429 @@
+/*css reset*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+body {
+  font-family: "PingFangSC", "Microsoft Yahei", "Lantinghei SC", "Helvetica Neue" , Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Wenquanyi Micro Hei", sans-serif;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 448.93vw;
+  background: url(../images/bg.jpg) no-repeat center top;
+  background-size: 100% auto;
+}
+
+.main .main-body {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 104vw;
+}
+
+.main .main-body .logo {
+  position: absolute;
+  top: 3vw;
+  left: 39vw;
+  width: 20vw;
+  height: 5.73vw;
+}
+
+.main .main-body .logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.main .main-body .logo a img {
+  width: 100%;
+  height: 100%;
+}
+
+.main .main-body .btn-actions {
+  position: absolute;
+  top: 67vw;
+  width: 100%;
+}
+
+.main .main-body .btn-actions .btn {
+  position: relative;
+  display: block;
+  width: 50.66vw;
+  height: 13.33vw;
+  margin: 0 auto;
+}
+
+.main .main-body .btn-actions .btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50.66vw;
+  height: inherit;
+  background-color: #ff0006;
+  transform: skew(5deg) rotate(-2deg);
+  -webkit-transform: skew(5deg) rotate(-2deg);
+}
+
+.main .main-body .btn-actions .btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50.66vw;
+  height: inherit;
+  background-color: rgba(255, 0, 6, 0.4);
+  transform: skew(-5deg) rotate(0.5deg);
+  -webkit-transform: skew(-5deg) rotate(0.5deg);
+}
+
+.main .main-body .btn-actions .btn.finished::before {
+  background-color: #b9b08a;
+}
+
+.main .main-body .btn-actions .btn.finished::after {
+  background-color: rgba(185, 176, 138, 0.4);
+}
+
+.main .main-body .btn-actions .btn.finished .text {
+  z-index: 10;
+  position: absolute;
+  top: 2vw;
+  left: 8vw;
+  width: 34.93vw;
+  height: 10vw;
+  background: url(../images/finished.png) no-repeat center top;
+  background-size: 100% auto;
+}
+
+.main .main-body .btn-actions .btn.signup::before {
+  background-color: #ff0006;
+}
+
+.main .main-body .btn-actions .btn.signup::after {
+  background-color: rgba(255, 0, 6, 0.4);
+}
+
+.main .main-body .btn-actions .btn.signup .text {
+  z-index: 10;
+  position: absolute;
+  top: 2vw;
+  left: 8vw;
+  width: 34.93vw;
+  height: 10vw;
+  background: url(../images/signup-text.png) no-repeat center top;
+  background-size: 100% auto;
+}
+
+.main .main-body .btn-actions .btn.signup:active::before {
+  background-color: #fff;
+}
+
+.main .main-body .btn-actions .btn.signup:active::after {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.main .main-body .btn-actions .btn.signup:active .text {
+  background: url(../images/signup-text-pressed.png) no-repeat center top;
+  background-size: 100% auto;
+}
+
+.main .main-body .btn-actions .btn.play {
+  height: 16vw;
+  margin-top: -2vw;
+}
+
+.main .main-body .btn-actions .btn.play::before {
+  background-color: #ff0006;
+}
+
+.main .main-body .btn-actions .btn.play::after {
+  background-color: rgba(255, 0, 6, 0.4);
+}
+
+.main .main-body .btn-actions .btn.play .text {
+  z-index: 10;
+  position: absolute;
+  top: 2vw;
+  left: 13vw;
+  width: 25.6vw;
+  height: 14.4vw;
+  background: url(../images/play.png) no-repeat center top;
+  background-size: 100% auto;
+}
+
+.main .main-body .btn-actions .btn.play:active::before {
+  background-color: #fff;
+}
+
+.main .main-body .btn-actions .btn.play:active::after {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.main .main-body .btn-actions .btn.play:active .text {
+  background: url(../images/play-pressed.png) no-repeat center top;
+  background-size: 100% auto;
+}
+
+.main .main-body .btn-actions .btn.notyet {
+  height: 16vw;
+  margin-top: -2vw;
+}
+
+.main .main-body .btn-actions .btn.notyet::before {
+  background-color: #ff0006;
+}
+
+.main .main-body .btn-actions .btn.notyet::after {
+  background-color: rgba(255, 0, 6, 0.4);
+}
+
+.main .main-body .btn-actions .btn.notyet .text {
+  z-index: 10;
+  position: absolute;
+  top: 2vw;
+  left: 7vw;
+  width: 37.73vw;
+  height: 14.26vw;
+  background: url(../images/notyet-text.png) no-repeat center top;
+  background-size: 100% auto;
+}
+
+.main .main-body .btn-actions .btn.notyet.starting-time .text {
+  z-index: 10;
+  position: absolute;
+  top: 2vw;
+  left: 3vw;
+  width: 45.6vw;
+  height: 14.13vw;
+  background: url(../images/starting-time-text.png) no-repeat center top;
+  background-size: 100% auto;
+}
+
+.main .main-body .act-time {
+  width: 84vw;
+  margin: 0 auto;
+}
+
+.main .main-body .act-time .title {
+  position: relative;
+  width: 52.66vw;
+  height: 13.86vw;
+  margin-left: 21.06vw;
+  background: url(../images/title-bg.png) no-repeat center top;
+  background-size: 100% auto;
+}
+
+.main .main-body .act-time .title .title-text {
+  position: absolute;
+  top: 3.5vw;
+  left: 9vw;
+  width: 23.73vw;
+  height: 6.13vw;
+  background: url(../images/title-text-1.png) no-repeat center top;
+  background-size: 100% auto;
+}
+
+.main .main-body .act-time .text-content {
+  text-align: center;
+  font-size: 4vw;
+  color: #363636;
+  line-height: 8vw;
+}
+
+.main .main-body .act-time .text-content span.red-text {
+  color: #ff0006;
+}
+
+.main .main-body .act-detail {
+  width: 84vw;
+  margin: 0 auto;
+  margin-top: 8.66vw;
+}
+
+.main .main-body .act-detail .title {
+  position: relative;
+  width: 52.66vw;
+  height: 13.86vw;
+  margin-left: 21.06vw;
+  background: url(../images/title-bg.png) no-repeat center top;
+  background-size: 100% auto;
+}
+
+.main .main-body .act-detail .title .title-text {
+  position: absolute;
+  top: 3.5vw;
+  left: 9vw;
+  width: 24.4vw;
+  height: 6.4vw;
+  background: url(../images/title-text-2.png) no-repeat center top;
+  background-size: 100% auto;
+}
+
+.main .main-body .act-detail .text-content {
+  margin-top: 2vw;
+  text-align: left;
+  font-size: 4vw;
+  color: #363636;
+  line-height: 5.33vw;
+}
+
+.main .main-body .act-detail .text-content span.red-text {
+  color: #ff0006;
+}
+
+.main .main-body .act-detail .text-content .table {
+  width: 100%;
+  margin-top: 7vw;
+  font-size: 3.73vw;
+  line-height: 5.33vw;
+  border-spacing: 0.66vw;
+  border-collapse: separate;
+}
+
+.main .main-body .act-detail .text-content .table td {
+  width: auto;
+  height: 12vw;
+  line-height: 12vw;
+  color: #040105;
+  font-size: 3.73vw;
+  text-align: center;
+  background-color: rgba(4, 1, 5, 0.1);
+}
+
+.main .main-body .act-detail .text-content .table td span.text-num {
+  font-size: 4vw;
+}
+
+.main .main-body .act-detail .text-content .table td.tb-title {
+  font-size: 4.8vw;
+  font-weight: bold;
+}
+
+.main .main-body .act-detail .text-content .table td.two-line {
+  height: 11.33vw;
+  padding-top: 0.66vw;
+  line-height: 5.33vw;
+  vertical-align: top;
+}
+
+.main .main-body .act-detail .text-content .table td[rowspan='2'] {
+  line-height: 5.33vw;
+  vertical-align: middle;
+}
+
+.main .main-body .act-detail .text-content .table-2 tr td {
+  font-size: 3.2vw;
+}
+
+.main .main-body .act-detail .text-content .table-2 tr td:nth-child(1) {
+  font-size: 3.73vw;
+  width: 14vw;
+}
+
+.main .main-body .act-detail .text-content .table-2 tr td:nth-child(1).tb-title {
+  font-size: 4.8vw;
+  font-weight: bold;
+}
+
+.main .main-body .act-detail .text-content .example {
+  clear: both;
+  width: 100%;
+  height: 10.66vw;
+  font-size: 3.2vw;
+  line-height: 4.8vw;
+  color: #ff0006;
+}
+
+.main .main-body .act-detail .text-content .example .example-title {
+  float: left;
+  width: 7%;
+}
+
+.main .main-body .act-detail .text-content .example .example-content {
+  float: left;
+  width: 93%;
+}
+
+.main .main-body .act-rule {
+  width: 84vw;
+  margin: 0 auto;
+  margin-top: 22.66vw;
+}
+
+.main .main-body .act-rule .title {
+  position: relative;
+  width: 52.66vw;
+  height: 13.86vw;
+  margin-left: 21.06vw;
+  background: url(../images/title-bg.png) no-repeat center top;
+  background-size: 100% auto;
+}
+
+.main .main-body .act-rule .title .title-text {
+  position: absolute;
+  top: 3.5vw;
+  left: 9vw;
+  width: 23.46vw;
+  height: 6.13vw;
+  background: url(../images/title-text-3.png) no-repeat center top;
+  background-size: 100% auto;
+}
+
+.main .main-body .act-rule .text-content {
+  width: 80vw;
+  margin-top: 1vw;
+  padding-left: 5.33vw;
+}
+
+.main .main-body .act-rule .text-content ul {
+  width: 100%;
+  list-style-type: decimal;
+}
+
+.main .main-body .act-rule .text-content ul li {
+  font-size: 4vw;
+  line-height: 5.33vw;
+  color: #363636;
+}
+
+.main .main-body .act-rule .text-content ul li + li {
+  margin-top: 4.66vw;
+}
+
+.main .main-body .copyright {
+  width: 100%;
+  height: 12px;
+  margin-top: 21vw;
+  font-size: 12px;
+  text-align: center;
+  color: #220000;
+}

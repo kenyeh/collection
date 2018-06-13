@@ -1,0 +1,544 @@
+/*css reset*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+body {
+  font-family: "PingFangSC", "Microsoft Yahei", "Lantinghei SC", "Helvetica Neue", Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Wenquanyi Micro Hei", sans-serif;
+}
+
+.text-orange {
+  color: #e86838;
+}
+
+.text-darkred {
+  color: #bf5014;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 463.73vw;
+  background: url(../images/bg.jpg) no-repeat center top;
+  background-size: 100% auto;
+}
+
+.main .main-body {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 40.6vw;
+}
+
+.main .main-body .logo {
+  position: absolute;
+  top: 2.66vw;
+  left: 50%;
+  width: 23.06vw;
+  height: 6.8vw;
+  margin-left: -11.5vw;
+}
+
+.main .main-body .logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.main .main-body .logo a img {
+  width: 100%;
+  height: auto;
+}
+
+.main .main-body .activity-time {
+  width: 100%;
+  height: 6.53vw;
+  font-size: 3.2vw;
+  line-height: 6.53vw;
+  color: #f6f1dc;
+  text-align: center;
+}
+
+.main .main-body .signup-btns {
+  position: relative;
+  width: 65.06vw;
+  height: 23.06vw;
+  margin: 0 auto;
+  margin-top: 7.33vw;
+}
+
+.main .main-body .signup-btns .btns {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: inherit;
+  height: inherit;
+}
+
+.main .main-body .signup-btns .btns a {
+  display: block;
+  margin-top: 4vw;
+  margin-left: 9.33vw;
+  width: 46.66vw;
+  height: 11.33vw;
+}
+
+.main .main-body .signup-btns .btn-signup {
+  display: none;
+  background: url(../images/btn-signup.png) no-repeat center top;
+  background-size: 100% auto;
+}
+
+.main .main-body .signup-btns .btn-signup-done {
+  display: none;
+  background: url(../images/btn-signup-done.png) no-repeat center top;
+  background-size: 100% auto;
+}
+
+.main .main-body .signup-btns .btn-play {
+  display: none;
+  background: url(../images/btn-play.png) no-repeat center top;
+  background-size: 100% auto;
+}
+
+.main .main-body .signup-btns .btn-finished {
+  background: url(../images/btn-finished.png) no-repeat center top;
+  background-size: 100% auto;
+}
+
+.main .main-body .content {
+  margin-top: 33.33vw;
+}
+
+.main .main-body .content .content-title {
+  width: 16.8vw;
+  height: 3.86vw;
+  margin-left: 2.66vw;
+  background: url(../images/content-title.png) no-repeat center top;
+  background-size: 100% auto;
+}
+
+.main .main-body .content .content-text {
+  width: 95%;
+  height: 13.66vw;
+  margin: 0 auto;
+  margin-top: 2.66vw;
+  font-size: 3.2vw;
+  line-height: 4.53vw;
+  color: #14142c;
+}
+
+.main .main-body .content .lists {
+  width: 100%;
+  padding-top: 2vw;
+}
+
+.main .main-body .content .lists .reward-list {
+  width: 91.46vw;
+  height: 77.8vw;
+  margin: 0 auto;
+  border: 1px dashed #f8b551;
+  border-radius: 1.33vw;
+}
+
+.main .main-body .content .lists .reward-list .row {
+  width: 100%;
+  height: 8.66vw;
+}
+
+.main .main-body .content .lists .reward-list .row:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.main .main-body .content .lists .reward-list .row.row-header {
+  height: 10.66vw;
+  background-image: url(../images/reward-title-bg.png);
+  background-repeat: no-repeat;
+  background-position: 19.26vw 1.6vw;
+  background-size: 54.4vw auto;
+}
+
+.main .main-body .content .lists .reward-list .row.row-footer {
+  height: 13.33vw;
+  font-size: 3.2vw;
+  line-height: 13.33vw;
+  text-align: center;
+  font-style: italic;
+  color: #bf5014;
+}
+
+.main .main-body .content .lists .reward-list .row.row-footer .pink {
+  color: #ea4e55;
+}
+
+.main .main-body .content .lists .reward-list .row.bgc {
+  background-color: #f4f7e6;
+}
+
+.main .main-body .content .lists .reward-list .row + .row {
+  border-top: 1px solid #516c5b;
+}
+
+.main .main-body .content .lists .reward-list .row .col {
+  float: left;
+  width: 50%;
+  height: 8.66vw;
+  font-size: 3.2vw;
+  text-align: center;
+  color: #487d5f;
+  line-height: 8.66vw;
+}
+
+.main .main-body .content .lists .reward-list .row .col + .col {
+  margin-left: -1px;
+  border-left: 1px solid #82879f;
+}
+
+.main .main-body .content .lists .rank-list {
+  width: 91.46vw;
+  height: 107.46vw;
+  margin: 0 auto;
+  margin-top: 6vw;
+  border: 1px dashed #f8b605;
+  border-radius: 1.33vw;
+}
+
+.main .main-body .content .lists .rank-list .rank-title {
+  width: 100%;
+  height: 10.66vw;
+  background-image: url(../images/rank-title-bg.png);
+  background-repeat: no-repeat;
+  background-position: 20vw 2.03vw;
+  background-size: 54vw auto;
+}
+
+.main .main-body .content .lists .rank-list .rank-list-block {
+  position: relative;
+  width: 88.66vw;
+  height: 82vw;
+  margin: 0 auto;
+  margin-top: 1.33vw;
+  padding: 1.33vw 0px;
+  border: 1px solid #ed906e;
+  border-radius: 1.33vw;
+  background-color: #f4f3e0;
+            /* costom scroll bar */;
+}
+
+.main .main-body .content .lists .rank-list .rank-list-block .rank-row-top {
+  position: absolute;
+  top: 0.66vw;
+}
+
+.main .main-body .content .lists .rank-list .rank-list-block .rank-row-top:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.main .main-body .content .lists .rank-list .rank-list-block .rank-row-top > div {
+  float: left;
+  height: 5vw;
+  text-align: center;
+  font-size: 3.2vw;
+  line-height: 5vw;
+  color: #bf5014;
+}
+
+.main .main-body .content .lists .rank-list .rank-list-block .rank-row-top .row-no {
+  width: 16vw;
+}
+
+.main .main-body .content .lists .rank-list .rank-list-block .rank-row-top .row-name {
+  width: 35.33vw;
+}
+
+.main .main-body .content .lists .rank-list .rank-list-block .rank-row-top .row-amount {
+  width: 24.66vw;
+  padding-right: 6vw;
+  text-align: right;
+}
+
+.main .main-body .content .lists .rank-list .rank-list-block .rank-list-body {
+  padding-top: 5vw;
+  padding-bottom: 1vw;
+  height: 73.06vw;
+}
+
+.main .main-body .content .lists .rank-list .rank-list-block .rank-list-body .rank-row:nth-child(1) .row-no {
+  position: relative;
+  width: 16vw;
+}
+
+.main .main-body .content .lists .rank-list .rank-list-block .rank-list-body .rank-row:nth-child(1) .row-no .icon {
+  font-size: 0;
+  line-height: 5.6vw;
+  border: 0px;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.main .main-body .content .lists .rank-list .rank-list-block .rank-list-body .rank-row:nth-child(1) .row-no:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0vw;
+  left: 3.6vw;
+  width: 8.8vw;
+  height: 7.86vw;
+  background: url(../images/no1.png) no-repeat center top;
+  background-size: 100% auto;
+}
+
+.main .main-body .content .lists .rank-list .rank-list-block .rank-list-body .rank-row {
+  position: relative;
+}
+
+.main .main-body .content .lists .rank-list .rank-list-block .rank-list-body .rank-row:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.main .main-body .content .lists .rank-list .rank-list-block .rank-list-body .rank-row > div {
+  float: left;
+  height: 6vw;
+  text-align: center;
+  line-height: 6vw;
+}
+
+.main .main-body .content .lists .rank-list .rank-list-block .rank-list-body .rank-row .row-no {
+  width: 16vw;
+}
+
+.main .main-body .content .lists .rank-list .rank-list-block .rank-list-body .rank-row .row-no .icon {
+  display: inline-block;
+  width: 5.6vw;
+  height: 5.6vw;
+  font-size: 3.2vw;
+  color: white;
+  line-height: 5.6vw;
+  border: 1px solid #d1a74f;
+  border-radius: 50%;
+  background-color: #c2a754;
+}
+
+.main .main-body .content .lists .rank-list .rank-list-block .rank-list-body .rank-row .row-name {
+  width: 35.33vw;
+  font-size: 3.2vw;
+  color: #ffcf5b;
+}
+
+.main .main-body .content .lists .rank-list .rank-list-block .rank-list-body .rank-row .row-amount {
+  width: 26.66vw;
+  padding-right: 4vw;
+  color: #e86838;
+  font-size: 3.2vw;
+  text-align: right;
+}
+
+.main .main-body .content .lists .rank-list .rank-list-block .rank-list-body .rank-row + .rank-row {
+  margin-top: 1.33vw;
+}
+
+.main .main-body .content .lists .rank-list .rank-list-block .rank-list-body .rank-row.self::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: -0.8px;
+  left: 4.73vw;
+  width: 74.66vw;
+  height: 6vw;
+  border: 2px solid #856809;
+  border-radius: 3.5vw 1.33vw 1.33vw 3.5vw;
+}
+
+.main .main-body .content .lists .rank-list .rank-list-block .rank-list-body .rank-row.self .row-no .icon {
+  color: white;
+  border: 1px solid #1d1906;
+  background-color: #bb202c;
+}
+
+.main .main-body .content .lists .rank-list .rank-list-block .simplebar-track.horizontal {
+  display: none;
+}
+
+.main .main-body .content .lists .rank-list .rank-list-block .simplebar-track {
+  right: 1.33vw;
+  width: 4vw;
+  background-color: #dabb5d;
+  box-shadow: inset 0 0.5vw 1vw rgba(0, 0, 0, 0.3);
+  border-radius: 2vw;
+}
+
+.main .main-body .content .lists .rank-list .rank-list-block .simplebar-track .simplebar-scrollbar {
+  right: 0px;
+  width: inherit;
+  border-radius: 4vw;
+  box-shadow: inset 0 0.5vw 1vw rgba(0, 0, 0, 0.3);
+  background-color: #e36637;
+}
+
+.main .main-body .content .lists .rank-list .rank-list-update-time {
+  width: 100%;
+  font-size: 3.2vw;
+  line-height: 9.33vw;
+  text-align: center;
+  font-style: italic;
+  color: #bf5014;
+}
+
+.main .main-body .lucky-draw {
+  position: relative;
+  width: 78.4vw;
+  height: 28.8vw;
+  margin: 0 auto;
+  margin-top: -3vw;
+}
+
+.main .main-body .lucky-draw .btns {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: inherit;
+  height: inherit;
+}
+
+.main .main-body .lucky-draw .btns a {
+  display: block;
+  margin-top: 8.86vw;
+  margin-left: 16.66vw;
+  width: 46.66vw;
+  height: 11.33vw;
+}
+
+.main .main-body .lucky-draw .btn-get {
+  display: none;
+  background: url(../images/btn-get.png) no-repeat center top;
+  background-size: 100% auto;
+}
+
+.main .main-body .lucky-draw .btn-get-disable {
+  background: url(../images/btn-get-disable.png) no-repeat center top;
+  background-size: 100% auto;
+}
+
+.main .main-body .rules {
+  width: 95vw;
+  margin: 0 auto;
+  margin-top: -3vw;
+}
+
+.main .main-body .rules .rules-title {
+  width: 16.8vw;
+  height: 3.86vw;
+  background: url(../images/rule-title.png) no-repeat center top;
+  background-size: 100% auto;
+}
+
+.main .main-body .rules .rule-list {
+  margin-top: 1.33vw;
+  padding-left: 4vw;
+}
+
+.main .main-body .rules .rule-list ul {
+  list-style: decimal;
+}
+
+.main .main-body .rules .rule-list ul li {
+  font-size: 3.2vw;
+  line-height: 5.33vw;
+  color: #14142c;
+}
+
+.main .main-body .copyright {
+  margin-top: 8vw;
+  text-align: center;
+  font-size: 1.86vw;
+  color: #789785;
+}
+
+.modal {
+  display: none;
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal .modal-main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../images/modal-bg.png) no-repeat center center;
+  background-size: 100% auto;
+}
+
+.modal .modal-main .modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -13vw;
+  margin-left: -27.2vw;
+  width: 55.6vw;
+  height: 27.46vw;
+}
+
+.modal .modal-main .modal-content .message {
+  margin-top: 9.66vw;
+}
+
+.modal .modal-main .modal-content .message p {
+  text-align: center;
+  line-height: 4.46vw;
+  font-size: 3.2vw;
+  font-weight: bold;
+  text-shadow: 0px 0.2vw 0.2vw #000000;
+  color: #edc322;
+}
+
+.modal .modal-main .btn-close {
+  position: absolute;
+  right: 1.3vw;
+  top: 0.7vw;
+  width: 4vw;
+  height: 4vw;
+}
+
+.modal .modal-main .btn-close a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

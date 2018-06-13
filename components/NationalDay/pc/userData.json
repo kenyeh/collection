@@ -1,0 +1,11 @@
+{
+    "state": 1,
+    "act1_singup" : 1,
+    "act2_singup" : 0,
+    "act2_ableToGetMoney": 1,
+    "act2_getMoney": 0,
+    "act2_user_amount": 320000,
+    "act2_total_amount": 800000,
+    "act3_game_state": 0,
+    "deposit_money" : "100000000"
+}

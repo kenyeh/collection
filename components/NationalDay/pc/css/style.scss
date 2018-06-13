@@ -1,0 +1,849 @@
+/*css reset*/
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address,big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul,li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,figure, figcaption,footer, header, hgroup,menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}article, aside, details, figcaption, figure,footer,header, hgroup, menu, nav, section {display: block;}body {line-height: 1;}ol, ul{list-style: none;}blockquote, q {quotes: none;}blockquote:before, blockquote:after,q:before, q:after {content: "";content: none;}
+
+
+body {
+    position: relative;
+    width: 100%;
+    min-width: 1200px;
+    font-family: "Lantinghei SC", "PingFangSC", "Helvetica Neue", Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", "Wenquanyi Micro Hei", sans-serif;
+}
+
+.triangle {
+    position: absolute;
+    width: 82px;
+    height: 75px;
+    background: url(../images/triangle.png)no-repeat center top;
+}
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.btn-singup {
+    display: block;
+    width: 170px;
+    height: 165px;
+    background: url(../images/btn-singup-over.png)no-repeat center top;
+    &.singup {
+        background: url(../images/btn-singup.png)no-repeat center top;
+    }
+    &.singup-done {
+        background: url(../images/btn-singup-done.png)no-repeat center top;
+    }
+    &.singup-done-play {
+        background: url(../images/btn-singup-done-play.png)no-repeat center top;
+    }
+    &.singup-over {
+        background: url(../images/btn-singup-end.png)no-repeat center top;
+    }
+}
+.btn-open-rule {
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    background: url(../images/btn-open-rule.png)no-repeat center top;
+}
+
+.page {
+    position: relative;
+    width: 100%;
+    height: 3821px;
+    background: url(../images/bg.jpg)no-repeat center top;
+    
+    .page-body {
+        position: relative;
+        width: 1200px;
+        height: inherit;
+        margin: 0 auto;
+        .page-logo {
+            position: absolute;
+            cursor: pointer;
+    
+            top: 30px;
+            left: 30px;
+    
+            width: 238px;
+            height: 88px;
+    
+            a {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+            }
+    
+        }
+        .title {
+            width: 1200px;
+            height: 654px;
+            background: url(../images/title-bg1.png)no-repeat center top;
+        }
+        .act-1 {
+            width: 1200px;
+            height: 975px;
+            padding-top: 238px;
+            background: url(../images/act1-bg-n.png)no-repeat center top;
+            .cards {
+                position: relative;
+                width: inherit;
+                height: 295px;
+                .card1 {
+                    position: absolute;
+                    top: 20px;
+                    left: 94px;
+                    width: 319px;
+                    height: 215px;
+                    background: url(../images/card1-on.png)no-repeat center top;
+                }
+                .card2 {
+                    opacity: 0.4;
+                    position: absolute;
+                    top: 38px;
+                    left: 446px;
+                    width: 308px;
+                    height: 210px;
+                    background: url(../images/card2.png)no-repeat center top;
+                }
+                .card3 {
+                    opacity: 0.4;
+                    position: absolute;
+                    top: 72px;
+                    left: 805px;
+                    width: 319px;
+                    height: 225px;
+                    background: url(../images/card3.png)no-repeat center top;
+                }
+                .triangle {
+                    top: -2px;
+                    left: 230px;
+                }
+            }
+            .act1-body {
+                position: relative;
+                width: inherit;
+                height: 315px;
+                .title-text {
+                    position: absolute;
+                    top: 70px;
+                    left: 90px;
+                    width: 206px;
+                    height: 33px;
+                    background: url(../images/act1-text1.png)no-repeat center top;
+                }
+                .title-subtext {
+                    position: absolute;
+                    top: 75px;
+                    left: 335px;
+                    width: 293px;
+                    height: 26px;
+                    background: url(../images/act1-text2.png)no-repeat center top;
+                }
+                .text-body {
+                    position: absolute;
+                    top: 143px;
+                    left: 82px;
+                    width: 846px;
+                    height: 131px;
+                    padding-top: 30px;
+                    padding-left: 100px;
+                    padding-right: 100px;
+                    font-size: 18px;
+                    color: #f2f6c1;
+                    background: url(../images/act1-text-bg.png)no-repeat center top;
+                    ul {
+                        padding-left: 30px;
+                        list-style-type: decimal;
+                        li {
+                            padding: 0px 10px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+                .act1-singup {
+                    position: absolute;
+                    top: 10px;
+                    right: 144px;
+                }
+                .btn-open-rule {
+                    position: absolute;
+                    top: 170px;
+                    right: 110px;
+                }
+            }
+            .envelopes {
+                width: 834px;
+                height: 365px;
+                padding-left: 380px;
+                background: url(../images/envelopes.png)no-repeat center top;
+            }
+        }
+        .act2 {
+            position: relative;
+            width: 1200px;
+            height: 1016px;
+            background: url(../images/act2-bg.png)no-repeat center top;
+            .title-text {
+                position: absolute;
+                top: 50px;
+                left: 60px;
+                width: 262px;
+                height: 72px;
+                background: url(../images/act2-text-title.png)no-repeat center top;
+            }
+            .title-subtext {
+                position: absolute;
+                top: 70px;
+                left: 330px;
+                width: 420px;
+                height: 27px;
+                background: url(../images/act2-text-sub.png)no-repeat center top;
+            }
+            .taps {
+                z-index: 10;
+                position: absolute;
+                top: 158px;
+                left: 100px;
+                width: 600px;
+                height: 90px;
+                .taps-btn {
+                    float: left;
+                    position: relative;
+                    width: 186px;
+                    height: 73px;
+                    div {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 186px;
+                        height: 73px;
+                    }
+                    &.btn1 {
+                        .btn-act {
+                            background: url(../images/act2-btn-a1-act.png)no-repeat center bottom;
+                        }
+                        .btn-show {
+                            cursor: pointer;
+                            background: url(../images/act2-btn-a1.png)no-repeat center bottom;
+                            background-size: 98% auto;
+                        }
+                    }
+                    &.btn2 {
+                        margin-left: 30px;
+                        .btn-act {
+                            display: none;
+                            background: url(../images/act2-btn-a2-act.png)no-repeat center bottom;
+                        }
+                        .btn-show {
+                            cursor: pointer;
+                            background: url(../images/act2-btn-a2.png)no-repeat center bottom;
+                            background-size: 98% auto;
+                        }
+                    }
+                }
+            }
+            .act2-body {
+                z-index: 50;
+                position: absolute;
+                top: 223px;
+                width: 1000px;
+                height: 440px;
+                padding: 50px 100px 100px 100px;
+                background: url(../images/act2-body-bg.png)no-repeat center top;
+                .act2-tap-block {
+                    position: relative;
+                    width: 1000px;
+                    height: 440px;
+                    .tapbody-1 {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%; //background: url(../images/act2-a1-bg.png)no-repeat left top;
+                        .content {
+                            position: relative;
+                            width: 100%;
+                            height: 100%;
+                            .a1-title-text {
+                                width: 918px;
+                                height: 52px;
+                                background: url(../images/act2-a1-title-text.png)no-repeat center top;
+                            }
+                            .a1-show-date {
+                                width: 103px;
+                                height: 77px;
+                                margin-top: 60px;
+                                padding-top: 12px;
+                                padding-left: 5px;
+                                background: url(../images/act2-a1-date.png)no-repeat center top;
+                                .today {
+                                    width: 60px;
+                                    height: 50px;
+                                    text-align: center;
+                                    font-size: 52px;
+                                    font-weight: bold;
+                                    color: #fff;
+                                }
+                            }
+                            .a1-get-prize {
+                                width: 302px;
+                                height: 279px;
+                                margin-left: 375px;
+                                margin-top: -25px;
+                                background: url(../images/act2-a1-coin.png)no-repeat center top;
+                                .coin {
+                                    position: relative;
+                                    display: block;
+                                    width: 222px;
+                                    height: 139px;
+                                    padding-top: 101px;
+                                    text-decoration: none;
+                                    .money {
+                                        width: 222px;
+                                        height: 50px;
+                                        margin: 0 auto;
+                                        font-size: 50px;
+                                        font-weight: bold;
+                                        text-align: center;
+                                        color: #600012;
+                                    }
+                                    .show-text {
+                                        width: 222px;
+                                        height: 64px;
+                                        margin-top: 13px;
+                                        text-align: center;
+                                        font-weight: bold;
+                                        font-size: 34px;
+                                        line-height: 60px;
+                                        color: #fff000;
+                                        background-color: #600012;
+                                    }
+                                    .get-money {
+                                        display: none;
+                                        position: absolute;
+                                        top: -80px;
+                                        width: 240px;
+                                        text-align: center;
+                                        font-size: 24px;
+                                        line-height: 30px;
+                                        color: #cab3d7;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .tapbody-2 {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%; //background: url(../images/act2-a2-bg.png)no-repeat center top;
+                        .content {
+                            position: relative;
+                            padding-top: 70px;
+                            .a2-title {
+                                width: 100%;
+                                height: 109px;
+                                &.state1 {
+                                    background: url(../images/act2-a2-title.png)no-repeat center top;
+                                }
+                                &.state2 {
+                                    background: url(../images/act2-a2-title2.png)no-repeat center top;
+                                }
+                            }
+                            .a2-show-money {
+                                width: 355px;
+                                height: 80px;
+                                padding-top: 17px;
+                                margin: 0 auto;
+                                margin-top: 25px;
+                                line-height: 80px;
+                                font-size: 64px;
+                                font-weight: bold;
+                                text-align: center;
+                                color: #d90008;
+                                background: url(../images/act2-a2-show-money.png)no-repeat center top;
+                            }
+                            .a2-money-bar {
+                                position: relative;
+                                width: 100%;
+                                height: 115px;
+                                .bar-title {
+                                    position: absolute;
+                                    width: 53px;
+                                    height: 62px;
+                                    top: 45px;
+                                    left: 10px;
+                                    background: url(../images/act2-a2-text.png)no-repeat center top;
+                                }
+                                .bar-line {
+                                    position: absolute;
+                                    overflow: hidden;
+                                    top: 50px;
+                                    left: 110px;
+                                    width: 725px;
+                                    height: 40px;
+                                    border-bottom: 1px solid #685273;
+                                    border-radius: 20px;
+                                    background: #360009;
+                                    .bar-line-inside {
+                                        position: absolute;
+                                        overflow: hidden;
+                                        width: 500px;
+                                        height: 40px;
+                                        left: 0;
+                                        top: 0;
+                                        border-radius: 20px;
+                                        border-bottom-right-radius: 0;
+                                        border-top-right-radius: 0;
+                                        box-shadow: inset 0 3px 5px rgba(0, 0, 0, .5);
+                                        background: #ffcb40;
+                                    }
+                                }
+                                .now-num,
+                                .start-num,
+                                .end-num {
+                                    position: absolute;
+                                    font-size: 28px;
+                                }
+                                .start-num {
+                                    top: 55px;
+                                    left: 80px;
+                                    color: #ffffff;
+                                }
+                                .end-num {
+                                    top: 55px;
+                                    left: 845px;
+                                    color: #ffffff;
+                                }
+                                .now-num {
+                                    top: 100px; // 110px + ?;
+                                    left: 585px;
+                                    color: #ffee3d;
+                                    font-weight: bold;
+                                    text-shadow: 3px 3px rgba(0, 0, 0, .5);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .btn-open-rule {
+                z-index: 51;
+                position: absolute;
+                top: 270px;                
+                right: 110px;
+            }
+            .act2-line {
+                position: absolute;
+                bottom: 183px;
+                left: 320px;
+                width: 22px;
+                height: 61px;
+                background: url(../images/act2-line.png)no-repeat center top;
+            }
+            .act2-singup {
+                position: absolute;
+                top: 35px;
+                right: 144px;
+            }
+            .act2-deposit {
+                position: absolute;
+                bottom: 18px;
+                left: 245px;
+                width: 170px;
+                height: 165px;
+                background: url(../images/btn-deposit.png)no-repeat center top;
+                &.unable {
+                    background: url(../images/btn-deposit-unable.png)no-repeat center top;
+                }
+            }
+            .act2-play {
+                display: none;
+                position: absolute;
+                bottom: 18px;
+                left: 245px;
+                width: 170px;
+                height: 165px;
+                background: url(../images/btn-play.png)no-repeat center top;
+                &.unable {
+                    background: url(../images/btn-play-unable.png)no-repeat center top;
+                }
+            }
+            .triangle {
+                top: -33px;
+                right: 185px;
+            }
+        }
+        .act3 {
+            position: relative;
+            width: 1200px;
+            height: 836px;
+            background: url(../images/act3-bg.png)no-repeat center top;
+
+            .ac3-game-title {
+                position: absolute;
+                top: 30px;
+                left: 335px;
+
+                width: 684px;
+                height: 168px;
+
+                font-size: 28px;
+                font-weight: bold;
+                color: #8a0400;
+
+                background: url(../images/act3-game-title.png)no-repeat center top;
+
+                .time1-text {
+                    position: absolute;
+                    top: 75px;
+                    left: 178px;  
+                    .gray {
+                        margin-top: 25px;
+                        color: #bdb337;
+                        
+                    }              
+
+                }
+                .time2-text {
+                    display: none;
+                    position: absolute;
+                    top: 22px;
+                    left: 178px;  
+                    .gray {
+                        margin-bottom: 25px;
+                        color: #bdb337;
+                        
+                    }  
+                }
+                
+            }
+
+            .game-timer {
+                position: absolute;
+                top: 425px;
+                left: 115px;
+
+                color: #fff;
+                font-weight: bold;
+                font-size: 26px;
+                .time-counter {
+                    margin-top: 10px;
+                    color: #ffee3d;
+                    font-size: 48px;
+                }
+            }
+            .wheel-game {
+                position: absolute;
+                top: 250px;
+                left: 360px;
+
+                width: 600px;
+                height: 600px;
+
+                .game-body {
+                    position: relative;
+                    .wheel {
+                        position: absolute;
+                        
+
+                        width: 538px;
+                        height: 538px;
+                        background-image: url(../images/act3-wheel-1.png);
+                        background-repeat: no-repeat;
+                        background-position: center top;
+                        background-size: 100% auto;
+                        
+                        &.run {
+                            animation: rotate 30s linear infinite;
+                        }
+                        &.go {
+                            animation: rotate 0.66s linear infinite;
+                        }
+                    }
+                    .wheel-center {
+                        //cursor: pointer;
+                        z-index: 11;
+                        position: absolute;
+                        left: 175px;
+                        top: 180px;
+                        width: 133px;
+                        height: 139px;
+                        padding-left: 55px;
+                        padding-top: 40px;
+                        
+            
+                        background: url(../images/act3-wheel-center.png) no-repeat center top;
+                        background-size: 100% auto;
+                        .center-text {
+                            width: 80px;
+                            height: 80px;
+                            font-weight: bold;
+                            font-size: 34px;
+                            line-height: 40px;
+                            letter-spacing: 3px;
+                            color: #f5f510;
+                            text-align: center;
+                        }
+                    }
+                    .point {
+                        z-index: 11;
+                        position: absolute;
+                        top: -10px;
+                        left: 240px;
+                        width: 58px;
+                        height: 77px;
+            
+                        background: url(../images/act3-pointer.png) no-repeat center top;
+                        background-size: 100% auto;
+                    }
+                    .light {
+                        display: none;
+                        z-index: 10;
+                        position: absolute;
+                        top: 18px;
+                        left: 180px;
+                        width: 177px;
+                        height: 213px;
+            
+                        background: url(../images/act3-light.png) no-repeat center top;
+                        background-size: 100% auto;
+            
+                        animation: blink 1s linear infinite;
+                    }
+                    
+                }
+            }
+            .get-message {
+                display: none;
+                z-index: 13;
+                position: absolute;
+                top: 192px;
+                left: 725px;            
+                font-size: 24px;
+                line-height: 30px;
+                color: #cab3d7;
+                .win {
+                    
+                    .gift-link-msg {
+                        display: none;
+                        a {
+                            color: #cab3d7;
+                        }
+                    }
+                }
+                .thanks {
+                    display: none;
+                }
+                
+
+            }
+            .triangle {
+                left: 185px;
+            }
+            .btn-open-rule {
+                position: absolute;
+                right: 100px;
+                top: 50px;
+            }
+        }
+        .copyright {
+            width: 1200px;
+            height: 15px;
+            margin-top: 55px;
+            background: url(../images/copyright-.png)no-repeat center top;
+        }
+    }
+}
+
+@keyframes rotate {
+    100% {
+    transform: rotate(360deg);
+    }
+}
+@keyframes blink {
+    0% {opacity: 0.3;}
+    50% {opacity: 1;}
+    100% {opacity: 0.3;}
+}
+
+.pop-block {
+    display: none;
+    z-index: 101;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    .pop-content {
+        position: relative;
+        width: 866px;
+        //min-height: 500px;
+        height: 755px;
+        left: 50%;
+        margin-left: -433px;
+        background-color: #fff;
+        border-radius: 20px;
+        border: 1px solid #530b81;
+        .pop-title {
+            position: relative;
+            width: 100%;
+            height: 90px;
+            font-size: 36px;
+            line-height: 90px;
+            color: #fff;
+            text-align: center;
+            border-bottom: 1px solid #530b81;
+            background-color: #623871;
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
+
+            .pop-close {
+                position: absolute;
+                cursor: pointer;
+                top: 25px;
+                right: 30px;
+                width: 30px;
+                height: 30px;
+
+                background: url(../images/btn-close.png)no-repeat center top;
+                background-size: 100% auto;
+            }
+        }
+        .pop-main {
+            position: relative;
+            height: 100%;
+            
+            .rules {
+                font-size: 24px;
+                padding: 50px 30px;
+                .act-date {
+                    color: #684378;
+                    line-height: 35px;
+                }
+                .act-title {
+                    margin-top: 30px;
+                    color: #684378;
+                    
+                }
+                .rule-text {
+                    overflow-y: auto;
+                    width: 800px;
+                    height: 465px;
+                    margin-top: 50px;
+                    color: #a9983b;
+                    font-size: 18px;
+                    line-height: 26px;
+                    
+                    ul {
+                        padding-left: 30px;
+                        list-style-type: decimal;
+                        li {
+                            padding: 0px 5px;
+                            line-height: 26px;
+                        }
+                    }
+
+                    
+                    .text-title {
+                        color: #684378;
+                        margin: 20px 0;
+                    }
+
+                    .text-subtitle {
+                        margin: 20px 0;
+                        color: #9f229d;
+                    }
+                    .rule-table {
+                        width: 100%;
+                        margin-top: 10px;
+
+                        color: #684378;
+                        line-height: 26px;
+
+                        border-collapse:collapse;
+                        border:1px solid #623871;
+                        tr.title-table>td{
+                            text-align: center;
+                            padding-left: 0px;
+                            padding: 10px 0px ;
+                            color: #fff;
+                            background-color: #623871;
+                        }
+
+                        td {
+                            padding: 30px 40px ;
+                            border:1px solid #623871;
+
+                            &.text-center {
+                                text-align: center;
+                            }
+
+                            .text-red {
+                                color: #9e0500;
+                            } 
+
+                            
+                        }
+                    }
+                    .rule-table2 {
+                        width: 100%;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        text-align: center;
+                        color: #fff;
+                        font-size: 18px;
+                        line-height: 30px;
+
+                        border-collapse:collapse;
+                        
+                        .td-title {
+                            background-color: #623871;
+                            padding-top: 5px;
+                            line-height: 35px;
+                        }
+
+                        td {
+                            border:1px solid #fff;
+                            padding: 5px 0px;
+                        }
+                        
+                        tr:nth-child(odd) {
+                            background-color: #aa86bd;
+                        }
+                        tr:nth-child(even) {
+                            background-color: #d4aaea;
+                        }
+                    }
+                    
+                }
+
+                &.rule1, &.rule2, &.rule3 {
+                    display: none;
+                }
+
+                &.rule1 .rule-text {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+.qrcode {
+    z-index: 100;
+    position: fixed;
+    top: 100px;
+    right: 50px;
+    width: 257px;
+    height: 212px;
+    background: url(../images/qrcode.png)no-repeat center top;
+
+    .qrcode-img {
+        position: fixed;
+        top: 113px;
+        right: 110px;    
+        width: 134px;
+        height: 133px;
+        background: url(../images/qrcode-img.png)no-repeat center top;
+    }
+}

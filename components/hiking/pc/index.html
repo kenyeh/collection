@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hiking</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/simplebar.css">
+</head>
+<body>
+    <div class="main">
+        <div class="modal">
+            <div class="modal-main">
+                <div class="modal-content">
+                    <div class="btn-close"><a href="javascript:"></a></div>
+                    <div class="message">
+                        <p>
+                            恭喜您于踏青赢十万活动中抽中<br>
+                            <span class="win-money">1234</span>元,奖金已到帐！
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-body">
+            <div class="logo">
+                <a href="#"><img src="./images/logo.png" alt="logo"></a>
+            </div>
+            <div class="activity-time">2018.4.2 00:00:00 - 2018.4.8 23:59:59</div>
+            <div class="signup-btns">
+                <div class="btns btn-signup"><a href="javascript:" id="signup"></a></div>
+                <div class="btns btn-signup-done"></div>
+                <div class="btns btn-play"><a href="javascript:"></a></div>
+                <div class="btns btn-finished"></div>
+            </div>
+            <div class="content">
+                <div class="content-title"></div>
+                <div class="content-text">
+                    报名用户在2018.4.02 00:00:00-2018.4.08 23:59:59期间销量最高者，<span class="text-orange">独享100,000奖金！</span>最终榜单第11-100名还可以免费参与一次抽奖，最高可获<span class="text-orange">1,888元</span>，惊喜不容错过！
+                </div>
+                <div class="lists">
+                    <div class="reward-list">
+                        <div class="row row-header"></div>
+                        <div class="row">
+                            <div class="col"><span class="text-darkred">金榜名次</span></div>
+                            <div class="col"><span class="text-darkred">奖金</span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col">第1名</div>
+                            <div class="col">100,000</div>
+                        </div>
+                        <div class="row bgc">
+                            <div class="col">第2名</div>
+                            <div class="col"><span class="text-darkred">50,000</span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col">第3名</div>
+                            <div class="col">20,000</div>
+                        </div>
+                        <div class="row bgc">
+                            <div class="col">第4 - 6名</div>
+                            <div class="col"><span class="text-darkred">5,000</span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col">第7 - 10名</div>
+                            <div class="col">2,000</div>
+                        </div>
+                        <div class="row row-footer">*最终榜单第<span class="pink">11-100</span>名免费抽奖</div>
+                    </div>
+                    <div class="rank-list">
+                        <div class="rank-title"></div>
+                        
+                        <div class="rank-list-block" >
+                            <div class="rank-row-top">
+                                <div class="row-no">名次</div>
+                                <div class="row-name">用户</div>
+                                <div class="row-amount">累计销量</div>
+                            </div>
+                            <div class="rank-list-body" id="scroll">
+                                <!-- <div class="rank-row">
+                                    <div class="row-no"><span class="icon">1</span></div>
+                                    <div class="row-name">张*******三</div>
+                                    <div class="row-amount">12,234,1888</div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="rank-list-update-time">*每15分钟刷新一次，下次刷新时间<span class="time">00:00</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="lucky-draw">
+                <div class="btns btn-get"><a href="javascript:" id="luckyDraw"></a></div>
+                <div class="btns btn-get-disable"></div>
+            </div>
+            <div class="rules">
+                <div class="rules-title"></div>
+                <div class="rule-list">
+                    <ul>
+                        <li>
+                            活动返奖，参与游戏只限于凤凰娱乐旗舰版及凤凰彩票专业版彩票类游戏。
+                        </li>
+                        <li>
+                            投注必须为已开奖注单，视为有效投注，奖励计算依据用户在活动期间内的有效投注量审核计算， PT、凤凰游艺FHX、六合彩、骰宝大小单双销量不计算在活动销量内。
+                        </li>
+                        <li>
+                            投注统计按照2018.4.02 00:00:00-2018.4.08 23:59:59累计计算销量。
+                        </li>
+                        <li>
+                            超级2000玩法按实际投注额的80%进行结算。如：用户超级2000玩法中投注额为1,000，则结算销量1,000*80%=800。
+                        </li>
+                        <li>
+                            本次活动采取报名制，用户需要点击“立即报名”后才能获取活动奖金。注：凤凰娱乐旗舰版平台51级以上（包含51级）以上用户/凤凰彩票专业版平台VIP3（包含VIP3）以上用户无需报名即可参加。
+                        </li>
+                        <li>
+                            排行榜前十名奖金于2018年4月9日派发，排行榜第11-100名抽奖时间2018年4月9日00:00:00-23:59:59，抽奖奖金即时到账。
+                        </li>
+                        <li>
+                            榜单名次以2018年4月8日23:59:59为准。
+                        </li>
+                        <li>
+                            活动期间禁止任何作弊行为，一经发现平台将取消参与活动资格，严重者将被冻结账号处理。
+                        </li>
+                        <li>
+                            凤凰平台保留活动最终解释权。
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">&copy;2003-2018 凤凰娱乐 All Rights Reserved</div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/simplebar.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="//static.phl58.co/static/js/phoenix.ga.js" async=""></script>
+</body>
+</html>

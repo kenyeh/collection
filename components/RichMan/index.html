@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>RichMan</title>
+        <link href="css/css.css" rel="stylesheet">
+        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="js/rich.js"></script>
+    </head>
+    <body id="rich">
+        <div class="model">
+            <div class="ModelBody">
+                <a class="btn_later" href="javascript:"></a>
+                <a class="btn_add" href="#" target="_blank"></a>
+            </div>
+        </div>
+        <div class="SideNav">
+            <div class="SideNavBody">
+                <div class="GOcom2 nav-btn" id="Go_com2">一</div>
+                <div class="GOcom3 nav-btn" id="Go_com3">二</div>
+                <div class="GOcom4 nav-btn" id="Go_com4">說明</div>
+                <div class="GOtop nav-btn" id="Go_rich" style="margin-bottom:0px;">TOP</div>   
+            </div>
+        </div>      
+        <div class="main">
+            <div class="com1" id="com1">
+                <div class="signup">
+                    <a href="#" class="singupBtn"></a>
+                </div>
+            </div>
+            <div class="com2" id="com2">
+                <div class="TodayDeposit" id="TodayDeposit">0</div>
+                <div class="TodayBets" id="TodayBets">0</div>
+                <div class="TodayPrize" id="TodayPrize">0</div>
+                <div class="btn_deposit"><a class="goDP" target="_blank" href="#"><img src="images/btn-deposit.png" alt=""></a></div>
+            </div>
+            <div class="com3" id="com3">
+                <div class="sign1">
+                    <div class="sign1num">0</div>
+                </div>
+                <div class="gift1"></div>
+                <div class="sign2">
+                    <div class="sign2num">0</div>
+                </div>
+                <div class="gift2"></div>
+                <div class="sign3">
+                    <div class="sign3num">0</div>
+                </div>
+                <div class="gift3"></div>
+                <div class="sign4"></div>
+                <div class="btn_ChangeAddress"><a class="goCA" target="_blank" href="#"><img src="images/btn-ca.png" alt=""></a></div>
+            </div>
+            <div class="com4" id="com4" style="margin-left:50px;"></div>
+        </div>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                                    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-63536434-1', 'auto');
+            ga('send', 'pageview');
+
+            $(function(){
+                //google analytics 点击统计
+                $(".singupBtn").on('click',function(){
+                    ga('send', 'event', '点击報名', 'click(点击)');
+                });
+                
+                $(".btn_add").on('click',function(){
+                    ga('send', 'event', '填写地址', 'click(点击)');
+                });
+                
+                $(".goDP").on('click',function(){
+                    ga('send', 'event', '立即充值', 'click(点击)');
+                });
+                
+                $(".goCA").on('click',function(){
+                    ga('send', 'event', '修改地址', 'click(点击)');
+                });
+
+            })
+        </script>
+    </body>
+</html>
