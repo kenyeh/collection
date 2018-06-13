@@ -10,13 +10,13 @@
 - 顯示成員"正在輸入訊息"
 
 #### 效果
-![GitHub](./images/c1.jpg)
-![GitHub](./images/c2.jpg)
-![GitHub](./images/c3.jpg)
-![GitHub](./images/c4.jpg)
-![GitHub](./images/c5.jpg)
-![GitHub](./images/c6.jpg)
-![GitHub](./images/c7.jpg)
+![](images/c1.jpg)
+![](images/c2.jpg)
+![](images/c3.jpg)
+![](images/c4.jpg)
+![](images/c5.jpg)
+![](images/c6.jpg)
+![](images/c7.jpg)
 
 ##### start
 ```
