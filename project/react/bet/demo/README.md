@@ -1,6 +1,6 @@
 
 # bet game include chat room
-socket-io 
+socket-io <br>
 react redux
 
 # getting start

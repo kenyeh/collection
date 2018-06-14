@@ -15,10 +15,10 @@ Chat room [Click](https://kenyeh.github.io/collection/project/ChatRoom(socketio)
 
 
 ## vue Project
-Practice [Click](https://kenyeh.github.io/project/vue/vue-practice)
-lmssc game [Click](https://kenyeh.github.io/project/vue/vue-lmssc)
+Practice [Click](https://kenyeh.github.io/collection/project/vue/vue-practice)<br>
+lmssc game [Click](https://kenyeh.github.io/collection/project/vue/vue-lmssc)
 
 
 ## react Project 
-Practice MemberChoose [Click](https://kenyeh.github.io/collection/project/react/MemberChoose)
+Practice MemberChoose [Click](https://kenyeh.github.io/collection/project/react/MemberChoose)<br>
 bet game ( with chat room) [Click](https://kenyeh.github.io/collection/project/react/bet/demo)
