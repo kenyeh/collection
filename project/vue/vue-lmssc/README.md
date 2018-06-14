@@ -2,7 +2,7 @@
 
 > A Vue.js project (vue 2 + vux 2)
 
-<img src="demo.png" alt="GitHub" title="GitHub,Social Coding" width="auto" height="70%" />
+<img src="images/demo.png" alt="GitHub" title="GitHub,Social Coding" width="auto" height="70%" />
 
 ## Build Setup
 
