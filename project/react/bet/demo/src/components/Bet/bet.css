@@ -1,0 +1,72 @@
+.bet--bet-controls {
+  width: 100%;
+  display: flex;
+}
+.bet--bet-controls * {
+  box-sizing: border-box;
+}
+
+.bet--bet-input {
+  flex: 4;
+  padding: 10px;
+}
+.bet--bet-confirm {
+  flex: 1;
+  padding: 10px;
+}
+
+.bet--input-line {
+  display: table;
+  line-height: 1;
+  border-collapse: separate;
+  position: relative;
+  padding: 5px 0;
+  font-size: 22px;
+}
+.bet--input-line > *{
+  display: table-cell;
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle;
+
+}
+
+
+.bet--input-line label,
+.bet--input-line input{
+  border-radius: 10px;
+  height: 62px;
+  line-height: 40px;
+  border: 1px solid #1b1b1b;
+  padding: 6px 12px;
+}
+
+.bet--input-line label{
+  border-right: 0;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+.bet--input-line input {
+  background-color: transparent;
+  background-image: none;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  width: 100%;
+  float: left;
+}
+.bet--button-box {
+  padding-left: 5px;
+  min-width: 140px;
+}
+.bet--button {
+  width: 120px;
+  margin-left: 5px;
+}
+.bet--flex {
+  padding-left: 10px;
+}
+.bet--error-msg {
+  color: red;
+}

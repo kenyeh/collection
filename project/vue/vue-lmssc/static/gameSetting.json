@@ -1,0 +1,269 @@
+{
+    "balance": 1234.56,
+    "currentTime": 1010,
+    "nextTime": 1070,
+    "currentIssues": "1008",
+    "defaultMethodId": 101,
+    "defaultCoin": {
+        "type": "set-500",
+        "value": 500
+    },
+    "issueHistory": [
+        {"issue": "1007", "wn_number": ""},
+        {"issue": "1006", "wn_number": "10061"},
+        {"issue": "1005", "wn_number": "10051"},
+        {"issue": "1004", "wn_number": "10041"},
+        {"issue": "1003", "wn_number": "10031"},
+        {"issue": "1002", "wn_number": "10021"},
+        {"issue": "1001", "wn_number": "10011"},
+        {"issue": "1000", "wn_number": "10001"}
+    ],
+    "gameRelation": {
+        "id": 1,
+        "pid": 0,
+        "name": "vue",
+        "children": [
+            {
+                "id": 11,
+                "pid": 1,
+                "name": "yixing",
+                "cn_name": "\u4e00\u661f",
+                "children": [
+                    {
+                        "id": 110,
+                        "pid": 11,
+                        "name": "wanwei",
+                        "cn_name": "\u4e07\u4f4d",
+                        "valueMatch": {
+                            "v_10": {
+                                "id": 1100,
+                                "match": 110,
+                                "name": "da"
+                            },
+                            "v_11": {
+                                "id": 1101,
+                                "match": 110,
+                                "name": "xiao"
+                            }
+                        },
+                        "speciallist": [
+                            {
+                                "id": 1100,
+                                "name": "da",
+                                "valueMatch": "10"
+                            },
+                            {
+                                "id": 1101,
+                                "name": "xiao",
+                                "valueMatch": "11"
+                            }
+                        ],
+                        "valueData": {
+                            "v_0to10": {
+                                "odds": 9.5
+                            },
+                            "v_10": {
+                                "odds": 1.9,
+                                "special": {
+                                    "id": 1100,
+                                    "name": "da"
+                                }
+                            },
+                            "v_11": {
+                                "odds": 1.9,
+                                "special": {
+                                    "id": 1101,
+                                    "name": "xiao"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "id": 111,
+                        "pid": 11,
+                        "name": "qianwei",
+                        "cn_name": "\u4edf\u4f4d",
+                        "valueMatch": {
+                            "v_10": {
+                                "id": 1110,
+                                "match": 111,
+                                "name": "da"
+                            },
+                            "v_11": {
+                                "id": 1111,
+                                "match": 111,
+                                "name": "xiao"
+                            }
+                        },
+                        "valueData": {
+                            "v_0to10": {
+                                "odds": 9.5
+                            },
+                            "v_10": {
+                                "odds": 1.9
+                            },
+                            "v_11": {
+                                "odds": 1.9
+                            }
+                        }
+                    },
+                    {
+                        "id": 112,
+                        "pid": 11,
+                        "name": "baiwei",
+                        "cn_name": "\u4f70\u4f4d",
+                        "valueMatch": {
+                            "v_10": {
+                                "id": 1120,
+                                "match": 112,
+                                "name": "da"
+                            },
+                            "v_11": {
+                                "id": 1121,
+                                "match": 112,
+                                "name": "xiao"
+                            }
+                        },
+                        "valueData": {
+                            "v_0to10": {
+                                "odds": 9.5
+                            },
+                            "v_10": {
+                                "odds": 1.9
+                            },
+                            "v_11": {
+                                "odds": 1.9
+                            }
+                        }
+                    },
+                    {
+                        "id": 113,
+                        "pid": 11,
+                        "name": "shiwei",
+                        "cn_name": "\u62fe\u4f4d",
+                        "valueMatch": {
+                            "v_10": {
+                                "id": 1130,
+                                "match": 113,
+                                "name": "da"
+                            },
+                            "v_11": {
+                                "id": 1131,
+                                "match": 113,
+                                "name": "xiao"
+                            }
+                        },
+                        "valueData": {
+                            "v_0to10": {
+                                "odds": 9.5
+                            },
+                            "v_10": {
+                                "odds": 1.9
+                            },
+                            "v_11": {
+                                "odds": 1.9
+                            }
+                        }
+                    },
+                    {
+                        "id": 114,
+                        "pid": 11,
+                        "name": "gewei",
+                        "cn_name": "\u4e2a\u4f4d",
+                        "valueMatch": {
+                            "v_10": {
+                                "id": 1140,
+                                "match": 114,
+                                "name": "da"
+                            },
+                            "v_11": {
+                                "id": 1141,
+                                "match": 114,
+                                "name": "xiao"
+                            }
+                        },
+                        "valueData": {
+                            "v_0to10": {
+                                "odds": 9.5
+                            },
+                            "v_10": {
+                                "odds": 1.9
+                            },
+                            "v_11": {
+                                "odds": 1.9
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "id": 10,
+                "pid": 1,
+                "name": "sanxing",
+                "cn_name": "\u4e09\u661f",
+                "children": [
+                    {
+                        "id": 100,
+                        "pid": 10,
+                        "name": "qiansan",
+                        "cn_name": "\u524d\u4e09",
+                        "valueData": {
+                            "v_0": {
+                                "odds": 90
+                            },
+                            "v_1": {
+                                "odds": 15
+                            },
+                            "v_2": {
+                                "odds": 3.3
+                            },
+                            "v_3": {
+                                "odds": 1.36
+                            }
+                        }
+                    },
+                    {
+                        "id": 101,
+                        "pid": 10,
+                        "name": "zhongsan",
+                        "cn_name": "\u4e2d\u4e09",
+                        "valueData": {
+                            "v_0": {
+                                "odds": 90
+                            },
+                            "v_1": {
+                                "odds": 15
+                            },
+                            "v_2": {
+                                "odds": 3.3
+                            },
+                            "v_3": {
+                                "odds": 1.36
+                            }
+                        }
+                    },
+                    {
+                        "id": 102,
+                        "pid": 10,
+                        "name": "housan",
+                        "cn_name": "\u540e\u4e09",
+                        "valueData": {
+                            "v_0": {
+                                "odds": 90
+                            },
+                            "v_1": {
+                                "odds": 15
+                            },
+                            "v_2": {
+                                "odds": 3.3
+                            },
+                            "v_3": {
+                                "odds": 1.36
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,18 @@
+.App{
+  position: relative;
+  height: 100%;
+}
+.main{
+  height: 700px;
+  /* overflow: hidden; */
+}
+.tablist {
+  height: 750px;
+  /* 
+  position: absolute;
+  top: calc(50vh+90px);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden; */
+}

@@ -1,0 +1,17 @@
+
+.tablist-chart,
+.tablist-trend,
+.tablist-bet{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  height: 100%;
+}
+.am-tabs-tab-bar-wrap{
+  flex: 3em 0;
+  text-align: center;
+}
+.am-tabs-tab-bar-wrap .am-tabs-default-bar-tab {
+  padding: 0 20px;
+}

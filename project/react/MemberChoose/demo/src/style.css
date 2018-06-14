@@ -1,0 +1,164 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #404040;
+}
+.app {
+    width: 1200px;
+
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.selectList, .chooseList, .abilities{
+    float: left;
+    width: 250px;
+    margin-left: 50px;
+}
+
+.abilities::after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.title {
+    width: 250px;
+    height: 50px;
+
+    margin-bottom: 50px;
+
+    font-size: 32px;
+    line-height: 50px;
+    color: #f1f1f1;
+    text-align: center;
+
+    background-color: coral;
+}
+
+.list {
+    clear: both;
+    width: 250px;
+}
+.list .member {
+    position: relative;
+    float: left;
+    width: 230px;
+    height: 40px;
+    padding-right: 20px;
+
+    font-size: 26px;
+    line-height: 40px;
+    color: #f1f1f1;
+    text-align: center;
+    text-decoration-line: none;
+
+    background-color: #4472c4;
+}
+.list .member::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    font-size: 26px;
+    line-height: 40px;
+    color: #f1f1f1;
+}
+.selectList .list .member::after {
+    content: '+';
+}
+.chooseList .list .member::after {
+    content: '-';
+}
+.list .member + .member {
+    margin-top: 10px;
+}
+
+.panel {
+    position: relative;
+
+    width: 250px;
+    height: 50px;
+
+    background-color: #fafafa;
+}
+.panel + .panel {
+    margin-top: 20px;
+
+    
+}
+.panel span {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    /* width: 50%; */
+    height: inherit;
+
+    background-color: gold;
+
+    transition: width 0.5s;
+}
+.panel::after {
+    content: attr(aria-label);;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: inherit;
+    height: inherit;
+
+    font-size: 32px;
+    line-height: 50px;
+    color: #010101;
+    text-align: center;
+}

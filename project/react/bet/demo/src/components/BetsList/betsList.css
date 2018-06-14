@@ -1,0 +1,58 @@
+.bets-list {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.bets-list--table-header {
+  width: 100%;
+}
+.bets-list table{
+  border-collapse: collapse;
+}
+.bets-list th {
+  background: #f7f7f7;
+  font-weight: bold;
+  white-space: nowrap;
+  padding: 0 4px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+.bets-list--table-body{
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  bottom: 60px;
+  overflow-y: auto;
+}
+.bets-list--table-body table{
+  width: 100%;
+}
+.bets-list--table-body td{
+  padding: 16px 4px;
+  text-align: center;
+  color: #333;
+  border-bottom: 1px solid #e9e9e9;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.bets-list--summary{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+}
+.bets-list--amount{
+  flex: 1;
+}
+.bets-list--count{
+  flex: 1;
+  color: #fff;
+  background: #108ee9;
+}

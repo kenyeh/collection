@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ChatRoom /> should render with same capture <ChatRoom /> snapshots 1`] = `
+<div
+  class="chatroom"
+>
+  <div
+    class="chatroom__chatlist"
+  >
+    <ul
+      class="chatroom__chatlist__content"
+    >
+      
+    </ul>
+  </div>
+  <div
+    class="chatroom__inputbar"
+  >
+    <div
+      class="chatroom__inputbar__form"
+    >
+      <input
+        class="chatroom__inputbar__form__input"
+        placeholder="Write a message..."
+        type="text"
+        value=""
+      >
+        
+      </input>
+      <div
+        class="chatroom__inputbar__form__submit"
+      >
+        <a
+          aria-disabled="false"
+          class="am-button chatroom__inputbar__form__submit__btn"
+          role="button"
+        >
+          <span>
+            Send
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

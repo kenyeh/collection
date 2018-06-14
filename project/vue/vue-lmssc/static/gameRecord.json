@@ -1,0 +1,174 @@
+{
+    "currentIssues": "1008",
+    "list": [
+        {
+            "issue": "1008",
+            "state": 0,
+            "totalResult": -1010,
+            "orders": [
+                {
+                    "orderId": 7,
+                    "cnTitle": "中三猜牌型",
+                    "methodId": 101,
+                    "betValue": 0,
+                    "betName": "chubaozi",
+                    "betMoney": 500,
+                    "result": 0,
+                    "cancelState": -1
+                },
+                {
+                    "orderId": 9,
+                    "cnTitle": "中三猜牌型",
+                    "methodId": 101,
+                    "betValue": 3,
+                    "betName": "qita",
+                    "betMoney": 500,
+                    "result": 0,
+                    "cancelState": -1
+                },
+                {
+                    "orderId": 19,
+                    "cnTitle": "中三猜牌型",
+                    "methodId": 101,
+                    "betValue": 3,
+                    "betName": "qita",
+                    "betMoney": 500,
+                    "result": 0,
+                    "cancelState": -1
+                },
+                {
+                    "orderId": 14,
+                    "cnTitle": "万位猜牌型",
+                    "methodId": 110,
+                    "betValue": 0,
+                    "betName": "ten-zero",
+                    "betMoney": 10,
+                    "result": 0,
+                    "cancelState": -1
+                },
+                {
+                    "orderId": 26,
+                    "cnTitle": "万位猜牌型",
+                    "methodId": 110,
+                    "betValue": 1,
+                    "betName": "ten-one",
+                    "betMoney": 10,
+                    "result": 0,
+                    "cancelState": -1
+                },
+                {
+                    "orderId": 41,
+                    "cnTitle": "万位猜牌型",
+                    "methodId": 110,
+                    "betValue": 10,
+                    "betName": "da",
+                    "betMoney": 500,
+                    "result": 0,
+                    "cancelState": -1
+                },
+                {
+                    "orderId": 61,
+                    "cnTitle": "万位猜牌型",
+                    "methodId": 110,
+                    "betValue": 10,
+                    "betName": "da",
+                    "betMoney": 500,
+                    "result": 0,
+                    "cancelState": -1
+                },
+                {
+                    "orderId": 18,
+                    "cnTitle": "万位猜牌型",
+                    "methodId": 110,
+                    "betValue": 9,
+                    "betName": "ten-nine",
+                    "betMoney": 100,
+                    "result": 0,
+                    "cancelState": -1
+                },
+                {
+                    "orderId": 8,
+                    "cnTitle": "千位猜牌型",
+                    "methodId": 111,
+                    "betValue": 1,
+                    "betName": "ten-one",
+                    "betMoney": 10,
+                    "result": 0,
+                    "cancelState": -1
+                }
+            ]
+        },
+        {
+            "issue": "1007",
+            "state": 1,
+            "totalResult": 45000,
+            "orders": [
+                {
+                    "orderId": 10,
+                    "cnTitle": "中三猜牌型",
+                    "methodId": 101,
+                    "betValue": 0,
+                    "betName": "chubaozi",
+                    "betMoney": 500,
+                    "result": 45000,
+                    "cancelState": -1
+                }
+            ]
+        },
+        {
+            "issue": "1006",
+            "state": 1,
+            "totalResult": -1010,
+            "orders": [
+                {
+                    "orderId": 7,
+                    "cnTitle": "中三猜牌型",
+                    "methodId": 101,
+                    "betValue": 0,
+                    "betName": "chubaozi",
+                    "betMoney": 500,
+                    "result": 0,
+                    "cancelState": -1
+                },
+                {
+                    "orderId": 9,
+                    "cnTitle": "中三猜牌型",
+                    "methodId": 101,
+                    "betValue": 3,
+                    "betName": "qita",
+                    "betMoney": 500,
+                    "result": 0,
+                    "cancelState": -1
+                },
+                {
+                    "orderId": 8,
+                    "cnTitle": "千位猜牌型",
+                    "methodId": 111,
+                    "betValue": 0,
+                    "betName": "ten-one",
+                    "betMoney": 10,
+                    "result": 0,
+                    "cancelState": -1
+                }
+            ]
+        },
+        {
+            "issue": "1005",
+            "state": 1,
+            "totalResult": 2500,
+            "orders": [
+                {
+                    "orderId": 6,
+                    "cnTitle": "中三猜牌型",
+                    "methodId": 101,
+                    "betValue": 0,
+                    "betName": "chubaozi",
+                    "betMoney": 500,
+                    "result": 2500,
+                    "cancelState": -1
+                }
+            ]
+        }
+    ]
+    
+}
