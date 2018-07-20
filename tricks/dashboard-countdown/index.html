@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="countdown-dashboard">
+        <div class="dashboard" id="dashboard">
+            <div class="progress">
+                <div class="degree light"></div>
+                <div class="degree light"></div>
+                <div class="degree light"></div>
+                <div class="degree light"></div>
+                <div class="degree light"></div>
+                <div class="degree light"></div>
+                <div class="degree light"></div>
+                <div class="degree light"></div>
+                <div class="degree light"></div>
+                <div class="degree light"></div>
+                <div class="degree light"></div>
+                <div class="degree light"></div>
+                <div class="degree light"></div>
+                <div class="degree light"></div>
+                <div class="degree light"></div>
+                <div class="degree light"></div>
+                <div class="degree light"></div>
+                <div class="degree light"></div>
+                <div class="degree light"></div>
+                <div class="degree light"></div>
+                <div class="degree light"></div>
+                <div class="degree light"></div>
+                <div class="degree light"></div>
+                <div class="degree light"></div>
+                <div class="degree light"></div>
+                <div class="degree light"></div>
+                <div class="degree light"></div>
+                <div class="degree light"></div>
+                <div class="degree light"></div>
+                <div class="degree light"></div>
+                <div class="swing"></div>
+            </div>
+            <div class="deadline-number"></div>
+            <div class="title">秒后下期投注截止</div>
+        </div>
+    </div>
+</body>
+<script>
+    $(function(){
+        var countdown = function (second) {
+            console.log('countdown')
+            var s = second;
+            $('.dashboard').find('.swing').addClass('animate');
+            $('.deadline-number').text(s)
+            var timer = setInterval(function () {
+                s -= 1;
+                if (!s) {
+                    clearInterval(timer)
+                }
+                $('.deadline-number').text(s)
+                if (s % 2 !== 1) {
+                    $('.dashboard').find('.degree.light').last().removeClass('light');
+                }
+            },1000);
+        }
+        countdown(60);
+    })
+</script>
+</html>

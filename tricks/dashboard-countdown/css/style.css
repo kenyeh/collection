@@ -1,0 +1,257 @@
+.countdown-dashboard {
+  width: 200px;
+  height: 140px;
+  background-color: #181223;
+}
+
+.countdown-dashboard .dashboard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.countdown-dashboard .dashboard .swing {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 180px;
+  height: 120px;
+}
+
+.countdown-dashboard .dashboard .progress {
+  position: relative;
+  width: 180px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.countdown-dashboard .dashboard .progress .swing {
+  position: absolute;
+  width: 38px;
+  height: 85px;
+  top: 10px;
+  left: 72px;
+  transform-origin: 50% 80px;
+  -webkit-transform-origin: 50% 80px;
+}
+
+.countdown-dashboard .dashboard .progress .swing.animate {
+  background: url("../images/swing.png") no-repeat center top;
+  animation: swing 1s linear infinite;
+  -webkit-animation: swing 1s linear infinite;
+}
+
+@keyframes swing {
+  0% {
+    -webkit-transform: rotate(100deg);
+    transform: rotate(100deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(-100deg);
+    transform: rotate(-100deg);
+  }
+}
+
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: rotate(100deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(-100deg);
+  }
+}
+
+.countdown-dashboard .dashboard .progress .degree {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 2px;
+  height: 13px;
+  background-color: #374267;
+  -webkit-transform-origin: 50% 70px;
+  transform-origin: 50% 70px;
+  -webkit-transition: background-color 2s linear;
+  transition: background-color 2s linear;
+}
+
+.countdown-dashboard .dashboard .progress .degree:nth-child(1) {
+  -webkit-transform: rotate(-105deg);
+  transform: rotate(-105deg);
+}
+
+.countdown-dashboard .dashboard .progress .degree:nth-child(2) {
+  -webkit-transform: rotate(-98deg);
+  transform: rotate(-98deg);
+}
+
+.countdown-dashboard .dashboard .progress .degree:nth-child(3) {
+  -webkit-transform: rotate(-91deg);
+  transform: rotate(-91deg);
+}
+
+.countdown-dashboard .dashboard .progress .degree:nth-child(4) {
+  -webkit-transform: rotate(-84deg);
+  transform: rotate(-84deg);
+}
+
+.countdown-dashboard .dashboard .progress .degree:nth-child(5) {
+  -webkit-transform: rotate(-77deg);
+  transform: rotate(-77deg);
+}
+
+.countdown-dashboard .dashboard .progress .degree:nth-child(6) {
+  -webkit-transform: rotate(-70deg);
+  transform: rotate(-70deg);
+}
+
+.countdown-dashboard .dashboard .progress .degree:nth-child(7) {
+  -webkit-transform: rotate(-63deg);
+  transform: rotate(-63deg);
+}
+
+.countdown-dashboard .dashboard .progress .degree:nth-child(8) {
+  -webkit-transform: rotate(-56deg);
+  transform: rotate(-56deg);
+}
+
+.countdown-dashboard .dashboard .progress .degree:nth-child(9) {
+  -webkit-transform: rotate(-49deg);
+  transform: rotate(-49deg);
+}
+
+.countdown-dashboard .dashboard .progress .degree:nth-child(10) {
+  -webkit-transform: rotate(-42deg);
+  transform: rotate(-42deg);
+}
+
+.countdown-dashboard .dashboard .progress .degree:nth-child(11) {
+  -webkit-transform: rotate(-35deg);
+  transform: rotate(-35deg);
+}
+
+.countdown-dashboard .dashboard .progress .degree:nth-child(12) {
+  -webkit-transform: rotate(-28deg);
+  transform: rotate(-28deg);
+}
+
+.countdown-dashboard .dashboard .progress .degree:nth-child(13) {
+  -webkit-transform: rotate(-21deg);
+  transform: rotate(-21deg);
+}
+
+.countdown-dashboard .dashboard .progress .degree:nth-child(14) {
+  -webkit-transform: rotate(-14deg);
+  transform: rotate(-14deg);
+}
+
+.countdown-dashboard .dashboard .progress .degree:nth-child(15) {
+  -webkit-transform: rotate(-7deg);
+  transform: rotate(-7deg);
+}
+
+.countdown-dashboard .dashboard .progress .degree:nth-child(16) {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.countdown-dashboard .dashboard .progress .degree:nth-child(17) {
+  -webkit-transform: rotate(7.66667deg);
+  transform: rotate(7.66667deg);
+}
+
+.countdown-dashboard .dashboard .progress .degree:nth-child(18) {
+  -webkit-transform: rotate(15.33333deg);
+  transform: rotate(15.33333deg);
+}
+
+.countdown-dashboard .dashboard .progress .degree:nth-child(19) {
+  -webkit-transform: rotate(23deg);
+  transform: rotate(23deg);
+}
+
+.countdown-dashboard .dashboard .progress .degree:nth-child(20) {
+  -webkit-transform: rotate(30.66667deg);
+  transform: rotate(30.66667deg);
+}
+
+.countdown-dashboard .dashboard .progress .degree:nth-child(21) {
+  -webkit-transform: rotate(38.33333deg);
+  transform: rotate(38.33333deg);
+}
+
+.countdown-dashboard .dashboard .progress .degree:nth-child(22) {
+  -webkit-transform: rotate(46deg);
+  transform: rotate(46deg);
+}
+
+.countdown-dashboard .dashboard .progress .degree:nth-child(23) {
+  -webkit-transform: rotate(53.66667deg);
+  transform: rotate(53.66667deg);
+}
+
+.countdown-dashboard .dashboard .progress .degree:nth-child(24) {
+  -webkit-transform: rotate(61.33333deg);
+  transform: rotate(61.33333deg);
+}
+
+.countdown-dashboard .dashboard .progress .degree:nth-child(25) {
+  -webkit-transform: rotate(69deg);
+  transform: rotate(69deg);
+}
+
+.countdown-dashboard .dashboard .progress .degree:nth-child(26) {
+  -webkit-transform: rotate(76.66667deg);
+  transform: rotate(76.66667deg);
+}
+
+.countdown-dashboard .dashboard .progress .degree:nth-child(27) {
+  -webkit-transform: rotate(84.33333deg);
+  transform: rotate(84.33333deg);
+}
+
+.countdown-dashboard .dashboard .progress .degree:nth-child(28) {
+  -webkit-transform: rotate(92deg);
+  transform: rotate(92deg);
+}
+
+.countdown-dashboard .dashboard .progress .degree:nth-child(29) {
+  -webkit-transform: rotate(99.66667deg);
+  transform: rotate(99.66667deg);
+}
+
+.countdown-dashboard .dashboard .progress .degree:nth-child(30) {
+  -webkit-transform: rotate(107.33333deg);
+  transform: rotate(107.33333deg);
+}
+
+.countdown-dashboard .dashboard .progress .degree.light {
+  background-color: #38b2ff;
+}
+
+.countdown-dashboard .dashboard .deadline-number {
+  position: absolute;
+  bottom: 20px;
+  left: 62px;
+  width: 80px;
+  height: 80px;
+  margin-left: 0;
+  line-height: 80px;
+  font-size: 70px;
+  font-weight: bold;
+  color: #d8def3;
+  text-align: center;
+}
+
+.countdown-dashboard .dashboard .title {
+  position: absolute;
+  bottom: 0px;
+  left: 52px;
+  width: 100px;
+  height: 18px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6d799a;
+  text-align: center;
+}
