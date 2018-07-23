@@ -8,6 +8,9 @@
 活動頁 廣告頁
 [Click](https://kenyeh.github.io/collection/components)
 
+## tricks
+效果 技巧 原件
+[Click](https://kenyeh.github.io/collection/tricks)
 
 
 ## socke-io project
