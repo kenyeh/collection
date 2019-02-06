@@ -1,7 +1,7 @@
 ## Moving Zeros To The End
 js
  
-#Description
+### Description
 序列累加
 如結果為負數 視為0 求總和
 
@@ -10,7 +10,7 @@ js
 
 
 
-##Solutions
+### Solutions
 
 my
 

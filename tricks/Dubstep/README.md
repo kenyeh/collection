@@ -1,14 +1,14 @@
 ## Dubstep
 js
  
-#Description
+### Description
 移除 'WUB' 詞彙
 
     songDecoder("WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB")
     // =>  WE ARE THE CHAMPIONS MY FRIEND
 
 
-##Solutions
+### Solutions
 
 my
 

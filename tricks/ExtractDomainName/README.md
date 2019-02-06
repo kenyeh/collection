@@ -1,7 +1,7 @@
 ## Extract the domain name from a URL
 js
  
-#Description
+### Description
 
     domainName("http://github.com/carbonfive/raygun") == "github" 
     domainName("http://www.zombie-bites.com") == "zombie-bites"
@@ -9,7 +9,7 @@ js
 
 
 
-##Solutions
+### Solutions
 
 My
 

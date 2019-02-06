@@ -1,7 +1,7 @@
 ## Integers: Recreation One
 js
  
-#Description
+### Description
 
 Divisors of 42 are : 1, 2, 3, 6, 7, 14, 21, 42. These divisors squared are: 1, 4, 9, 36, 49, 196, 441, 1764. The sum of the squared divisors is 2500 which is 50 * 50, a square!
 
@@ -18,7 +18,7 @@ n 到 m 之間 找出某個數所有因數平方 相加 會等於一個 正方�
 
 
 
-##Solutions
+### Solutions
 
 My
 

@@ -1,7 +1,7 @@
 ## Vigenère cipher
 js
  
-#Description
+### Description
 
 [維吉尼亞密碼](https://zh.wikipedia.org/wiki/%E7%BB%B4%E5%90%89%E5%B0%BC%E4%BA%9A%E5%AF%86%E7%A0%81)
 
@@ -22,7 +22,7 @@ Example
     c.decode('laxxhsj');  // returns 'waffles'
 
 
-##Solutions
+### Solutions
 
 My
 

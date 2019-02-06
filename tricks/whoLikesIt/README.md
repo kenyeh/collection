@@ -1,7 +1,7 @@
 ## Who likes it?
 js
  
-#Description
+### Description
 
     likes [] // must be "no one likes this"
     likes ["Peter"] // must be "Peter likes this"
@@ -11,7 +11,7 @@ js
 
 
 
-##Solutions
+### Solutions
 
 My
 

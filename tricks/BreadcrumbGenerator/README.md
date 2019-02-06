@@ -1,7 +1,7 @@
 ## Breadcrumb Generator
 js
  
-#Description
+### Description
 轉換成 麵包導航條
 
     generateBC("mysite.com/pictures/holidays.html", " : ") == '<a href="/">HOME</a> : <a href="/pictures/">PICTURES</a> : <span class="active">HOLIDAYS</span>'
@@ -19,7 +19,7 @@ very-long-url-to-make-a-silly-yet-meaningful-example ＝> VLUMSYME
     generateBC("www.very-long-site_name-to-make-a-silly-yet-meaningful-example.com/users/giacomo-sorbi", " + ") == '<a href="/">HOME</a> + <a href="/users/">USERS</a> + <span class="active">GIACOMO SORBI</span>'
 
 
-##Solutions
+### Solutions
 
 my
 

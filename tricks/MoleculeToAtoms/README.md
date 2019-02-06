@@ -1,7 +1,7 @@
 ## Molecule to atoms
 js
  
-#Description
+### Description
 拆解元素
 
     var water = 'H2O';
@@ -17,7 +17,7 @@ js
 
 
 
-##Solutions
+### Solutions
 
 my
 

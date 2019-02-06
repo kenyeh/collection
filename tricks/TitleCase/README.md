@@ -1,7 +1,7 @@
 ## Title Case
 js
  
-#Description
+### Description
 參數2 需要小寫的字
 如果為整句第一個字 還是需要大寫
 
@@ -11,7 +11,7 @@ js
 
 
 
-##Solutions
+### Solutions
 
 My
 

@@ -1,7 +1,7 @@
 ## Hello W... wait what?
 js
  
-#Description
+### Description
 Disallowed functionality:
 
     Strings
@@ -22,7 +22,7 @@ Without using the above, output the string "Hello World!" to prove that there is
 
 
 
-##Solutions
+### Solutions
 
 my
 

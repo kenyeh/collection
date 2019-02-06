@@ -1,7 +1,7 @@
 ## Scramblies
 js
  
-#Description
+### Description
 確認 s1 內容有 s2
 
 Input strings s1 and s2 are null terminated.
@@ -13,7 +13,7 @@ Input strings s1 and s2 are null terminated.
 
 
 
-##Solutions
+### Solutions
 
 my
 

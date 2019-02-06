@@ -1,7 +1,7 @@
 ## Breadcrumb Generator
 js
  
-#Description
+### Description
 判斷有效 座標
 經度 -180 ~ 180
 緯度 -90 ~ 90
@@ -24,7 +24,7 @@ And some invalid ones:
 - 0.342q0832, 1.2324
 
 
-##Solutions
+### Solutions
 
 my
 

@@ -1,7 +1,7 @@
 ## Sort the odd
 js
  
-#Description
+### Description
 偶數不動 只排序基數
 
 
@@ -9,7 +9,7 @@ js
 
 
 
-##Solutions
+### Solutions
 
 my
 

@@ -1,7 +1,7 @@
 ## 簡化路徑
 js
  
-#Description
+### Description
 簡單說 就是消除 彼此相反路徑
 >這邊有個備註
 >
@@ -16,7 +16,7 @@ js
 
 
 
-##Solutions
+### Solutions
 
 my
 

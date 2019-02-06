@@ -1,7 +1,7 @@
 ## 數字累加
 js
  
-#Description
+### Description
 
     digital_root(16)
     => 1 + 6
@@ -28,7 +28,7 @@ js
     => 2
 
 
-##Solutions
+### Solutions
 
 my
 
