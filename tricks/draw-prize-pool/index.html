@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>draw-prize-pool</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="prize-pool">
+        <div class="pool pool-1" data-cost="100000" data-pool="1">
+            <div class="pool-title">
+                <span class="icon-coin"></span>10W枚可抽1次
+            </div>
+            <div class="pool-body">
+                <div class="cards">
+                    <div class="card0"></div>
+                    <div class="card1"></div>
+                    <div class="card2"></div>
+                    <div class="card3"></div>
+                    <div class="card4"></div>
+                    <div class="card5"></div>
+                    <div class="card6"></div>
+                    <div class="card7"></div>
+                    <div class="card8"></div>
+                    <div class="card9"></div>
+                    <div class="card10"></div>
+                    <div class="card11"></div>
+                </div>
+                <div class="prize-items"></div>
+                <div class="draw-block">
+                    <div class="draw-one">
+                        <a href="javascript:;" class="btn btn-draw-one"></a>
+                    </div>
+                    <div class="draw-all">
+                        <a href="javascript:;" class="btn btn-draw-all"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+    $(function(){
+        var $pool = $('.pool');
+        //抽奖动画
+        var sparkSpin = function (awardData, callback) {
+            // console.log('sparkSpin')
+            var $cards = $pool.filter(".pool-" + awardData.pool).find(".cards div");
+            var count = 0
+            var cardNum = 0
+            var steps = ($cards.length * 3) + Number(awardData.awrad)  //先转3圈
+            var gapTime = 70
+            var startSpin = function () {
+                if (cardNum > ($cards.length - 1)) {
+                    cardNum = 0
+                }
+                if (count >= steps - $cards.length) {
+                    gapTime = gapTime + 25 //还剩10个的时候减速
+                }
+                if (count > steps) {
+                    callback()
+                    return
+                }
+                $cards.removeClass('cover')
+                $cards.filter(".card" + cardNum).addClass('cover')
+                count += 1
+                cardNum += 1
+                setTimeout(function () {
+                    startSpin()
+                }, gapTime)
+            }
+            startSpin()
+        }
+
+        var awradItemId = "3";
+        $('.draw-one').click(function(){
+            sparkSpin({
+                "pool": "1",
+                "awrad": awradItemId
+            }, function () {
+                // callback
+                alert('you got prize ' + awradItemId);
+            });
+        });
+    });
+    </script>
+</body>
+</html>
