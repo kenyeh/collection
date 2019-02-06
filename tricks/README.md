@@ -4,7 +4,8 @@
 - 到數計時版 (sass)
     [Click](https://kenyeh.github.io/collection/tricks/dashboard-countdown)
 
-
+- 獎池抽獎動畫
+    [Click](https://kenyeh.github.io/collection/tricks/draw-prize-pool)
 
 ---
 js
