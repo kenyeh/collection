@@ -19,7 +19,8 @@ Chat room [Click](https://kenyeh.github.io/collection/project/ChatRoom(socketio)
 
 ## vue Project
 Practice [Click](https://kenyeh.github.io/collection/project/vue/vue-practice)<br>
-lmssc game [Click](https://kenyeh.github.io/collection/project/vue/vue-lmssc)
+lmssc game [Click](https://kenyeh.github.io/collection/project/vue/vue-lmssc)<br>
+vue admin template [Click](https://kenyeh.github.io/collection/project/vue/vue-admin)<br>
 
 
 ## react Project 
