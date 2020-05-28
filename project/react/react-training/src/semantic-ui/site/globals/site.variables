@@ -1,0 +1,5 @@
+/*******************************
+     User Global Variables
+*******************************/
+@headerFont        : 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif, 'PingFang TC', 'Hiragino Sans TC', 'Microsoft YaHei';
+@pageFont          : 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif, 'PingFang TC', 'Hiragino Sans TC', 'Microsoft YaHei';
