@@ -1,0 +1,13 @@
+# start api server
+FROM node:10.15.3
+
+WORKDIR /usr/src/app
+
+COPY ["package.json", "yarn.lock", "./"]
+
+RUN yarn install
+
+COPY . .
+
+CMD [ "yarn", "api-server" ]
+

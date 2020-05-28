@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  node-api-app:
+    image: trainingreact-api
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    restart: always
+    network_mode: "host"
+
+  react-app:
+    image: trainingreact-app
+    build: .
+    restart: always
+    depends_on:
+      - node-api-app
+    network_mode: "host"
