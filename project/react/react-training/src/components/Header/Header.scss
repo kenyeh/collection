@@ -1,0 +1,14 @@
+.header-part {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  > .header {
+    margin-bottom: 0;
+    flex-grow: 1;
+  }
+  > .segment {
+    margin-top: 0;
+
+  }
+}
